@@ -27,8 +27,12 @@ export function render(data, app) {
       <h3>${ui('aboutAI')}</h3>
       <p>${ui('aboutAIText')}</p>
       <ul>
-        <li>${lang === 'en' ? 'Google Gemini 2.0 Flash — generous free tier (~1,500 req/day)' : 'Google Gemini 2.0 Flash — 免費額度大（約 1,500 請求/天）'}</li>
-        <li>${lang === 'en' ? 'Groq Llama 3.3 70B — very fast, free tier' : 'Groq Llama 3.3 70B — 速度極快，免費額度'}</li>
+        <li><strong>Groq</strong> — ${lang === 'en' ? 'free, very fast, no region limits (recommended for TW)' : '免費、速度極快、無地區限制（台灣推薦）'}</li>
+        <li><strong>Google Gemini</strong> — ${lang === 'en' ? 'free tier ~1,500 req/day (region-restricted)' : '免費額度約 1,500 請求/天（有地區限制）'}</li>
+        <li><strong>OpenRouter</strong> — ${lang === 'en' ? 'gateway with free models' : '聚合閘道，含免費模型'}</li>
+        <li><strong>NVIDIA NIM</strong> — ${lang === 'en' ? '1000 free credits on signup' : '註冊送 1000 免費點數'}</li>
+        <li><strong>OpenCode Zen</strong> — ${lang === 'en' ? '5 free models + paid pay-as-you-go' : '5 個免費模型 + 付費隨用'}</li>
+        <li><strong>OpenAI</strong> — ${lang === 'en' ? 'paid, possible trial credits' : '付費，可能有試用額度'}</li>
       </ul>
 
       <h3>${ui('aboutLicense')}</h3>

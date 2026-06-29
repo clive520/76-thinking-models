@@ -41,19 +41,30 @@ AI 諮詢功能需要你自己免費申請一組 API Key（金鑰只存在你的
 
 ### 免費 API Key 取得
 
-#### Google Gemini（推薦，額度最大）
-1. 前往 <https://aistudio.google.com/apikey>
-2. 以 Google 帳號登入，點「Create API key」
-3. 免費層級：約 15 請求/分鐘、1,500 請求/天（**免信用卡**）
-4. 複製金鑰貼入網站設定
+本站支援 6 個 AI 服務，可在「設定」中切換：
 
-#### Groq（速度最快）
-1. 前往 <https://console.groq.com/keys>
-2. 註冊後建立 API Key
-3. 免費層級：約 30 請求/分鐘、數千請求/天
-4. 複製金鑰貼入網站設定，並將 provider 切換為 Groq
+| 服務 | 免費額度 | 地區限制 | 取得 Key |
+|------|---------|---------|---------|
+| **Groq** | 數千請求/天，速度極快 | 無 | <https://console.groq.com/keys> |
+| **Google Gemini** | ~1,500 請求/天 | ⚠ 有（台灣等地需綁計費帳戶） | <https://aistudio.google.com/apikey> |
+| **OpenRouter** | 含免費模型（名稱 `:free`） | 無 | <https://openrouter.ai/keys> |
+| **NVIDIA NIM** | 註冊送 1000 免費點數 | 無 | <https://build.nvidia.com> |
+| **OpenCode Zen** | 5 個免費模型 + 付費隨用 | 無 | <https://opencode.ai/auth> |
+| **OpenAI** | 付費（新帳號可能有試用額度） | 無 | <https://platform.openai.com/api-keys> |
 
-> 金鑰安全：本站是純前端靜態網站，沒有後端。金鑰呼叫 AI API 後只存在你自己的瀏覽器中，不會被收集或傳送給本站伺服器。
+> **台灣使用者建議**：Gemini 免費層有地區限制，請改用 **Groq**、**OpenRouter** 或 **NVIDIA NIM**，皆無地區限制。
+
+#### 各服務步驟
+1. **Groq（推薦）**：至 console.groq.com 註冊 → API Keys → 建立 → 貼入網站
+2. **OpenRouter**：至 openrouter.ai 註冊 → Keys → 建立免費 Key → 貼入網站（自動使用免費模型）
+3. **NVIDIA NIM**：至 build.nvidia.com 註冊 → 取得 NGC API Key → 貼入網站（含 1000 免費點數）
+4. **OpenCode Zen**：至 opencode.ai/auth 登入加值 → 複製 API Key → 貼入網站（含 5 個免費模型）
+5. **Google Gemini**：至 aistudio.google.com 建立 Key → 貼入網站（注意地區限制）
+6. **OpenAI**：至 platform.openai.com 綁卡建立 Key → 貼入網站
+
+> 每個服務都可在設定中點「測試連線」驗證 Key 並自動偵測可用模型。
+
+> 金鑰安全：本站是純前端靜態網站，沒有後端。金鑰只存在你自己的瀏覽器 `localStorage`，不會被收集或傳送給本站伺服器。
 
 ---
 

@@ -24,29 +24,60 @@ export function hasKey() {
 const PROVIDERS = {
   gemini: {
     label: 'Google Gemini',
+    apiType: 'gemini',
     keyUrl: 'https://aistudio.google.com/apikey',
     keyHint: {
       zh: '至 Google AI Studio 申請。注意：Gemini「免費層」有地區限制，台灣等地區可能需綁定計費帳戶才能使用。',
       en: 'Get a key at Google AI Studio. Note: Gemini free tier has region restrictions — some regions require a billing account.'
     },
     modelFallbacks: ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-flash-latest', 'gemini-1.5-flash'],
-    modelHint: {
-      zh: '留空自動偵測；也可手動填入如 gemini-2.5-flash',
-      en: 'Leave empty for auto-detect; or enter e.g. gemini-2.5-flash'
-    },
+    modelHint: { zh: '留空自動偵測；也可手動填入如 gemini-2.5-flash', en: 'Leave empty for auto-detect; or enter e.g. gemini-2.5-flash' },
   },
   groq: {
     label: 'Groq',
+    apiType: 'openai',
+    baseUrl: 'https://api.groq.com/openai/v1',
     keyUrl: 'https://console.groq.com/keys',
-    keyHint: {
-      zh: '至 Groq Console 免費申請，速度極快，無地區限制。推薦台灣使用者使用。',
-      en: 'Get a free key at Groq Console. Very fast, no region restrictions. Recommended for users in restricted regions.'
-    },
+    keyHint: { zh: '至 Groq Console 免費申請，速度極快，無地區限制。推薦台灣使用者使用。', en: 'Get a free key at Groq Console. Very fast, no region restrictions. Recommended for restricted regions.' },
     modelFallbacks: ['llama-3.3-70b-versatile', 'llama-3.1-70b-versatile', 'llama-3.1-8b-instant'],
-    modelHint: {
-      zh: '留空自動偵測；也可手動填入如 llama-3.3-70b-versatile',
-      en: 'Leave empty for auto-detect; or enter e.g. llama-3.3-70b-versatile'
-    },
+    modelHint: { zh: '留空自動偵測；也可手動填入如 llama-3.3-70b-versatile', en: 'Leave empty for auto-detect; or enter e.g. llama-3.3-70b-versatile' },
+  },
+  openai: {
+    label: 'OpenAI',
+    apiType: 'openai',
+    baseUrl: 'https://api.openai.com/v1',
+    keyUrl: 'https://platform.openai.com/api-keys',
+    keyHint: { zh: '付費服務，需綁定信用卡。新帳號可能有免費試用額度。', en: 'Paid service, credit card required. New accounts may have trial credits.' },
+    modelFallbacks: ['gpt-4.1-mini', 'gpt-4.1-nano', 'gpt-4o-mini', 'gpt-4o'],
+    modelHint: { zh: '留空自動偵測；也可手動填入如 gpt-4.1-mini', en: 'Leave empty for auto-detect; or enter e.g. gpt-4.1-mini' },
+  },
+  openrouter: {
+    label: 'OpenRouter',
+    apiType: 'openai',
+    baseUrl: 'https://openrouter.ai/api/v1',
+    keyUrl: 'https://openrouter.ai/keys',
+    keyHint: { zh: '聚合 300+ 模型的閘道，含免費模型（名稱結尾 :free）。', en: 'Gateway to 300+ models, includes free ones (names ending :free).' },
+    modelFallbacks: ['meta-llama/llama-3.3-70b-instruct:free', 'google/gemini-2.0-flash-exp:free', 'meta-llama/llama-3.1-8b-instruct:free'],
+    modelHint: { zh: '留空自動偵測；免費模型名稱含 :free，例如 meta-llama/llama-3.3-70b-instruct:free', en: 'Leave empty for auto-detect; free models end with :free, e.g. meta-llama/llama-3.3-70b-instruct:free' },
+    extraHeaders: { 'X-Title': '76 Thinking Models' },
+  },
+  nvidia: {
+    label: 'NVIDIA NIM',
+    apiType: 'openai',
+    baseUrl: 'https://integrate.api.nvidia.com/v1',
+    keyUrl: 'https://build.nvidia.com',
+    keyHint: { zh: '至 NVIDIA build.ngc.nvidia.com 申請 NGC API Key，註冊即送 1000 免費點數。', en: 'Get an NGC API key at build.nvidia.com — 1000 free credits on signup.' },
+    modelFallbacks: ['meta/llama-3.3-70b-instruct', 'meta/llama-3.1-70b-instruct', 'meta/llama-3.1-8b-instruct'],
+    modelHint: { zh: '留空自動偵測；也可手動填入如 meta/llama-3.3-70b-instruct', en: 'Leave empty for auto-detect; or enter e.g. meta/llama-3.3-70b-instruct' },
+  },
+  opencode: {
+    label: 'OpenCode Zen',
+    apiType: 'openai',
+    baseUrl: 'https://opencode.ai/zen/v1',
+    keyUrl: 'https://opencode.ai/auth',
+    keyHint: { zh: 'OpenCode Zen 付費閘道（加值 20 美元起），含 5 個免費模型可試用。', en: 'OpenCode Zen paid gateway ($20 top-up), includes 5 free trial models.' },
+    modelFallbacks: ['big-pickle', 'deepseek-v4-flash-free', 'mimo-v2.5-free', 'north-mini-code-free', 'nemotron-3-ultra-free', 'glm-5.2'],
+    modelHint: { zh: '留空自動偵測；免費模型如 big-pickle、deepseek-v4-flash-free', en: 'Leave empty for auto-detect; free models like big-pickle, deepseek-v4-flash-free' },
   },
 };
 
@@ -87,25 +118,24 @@ function buildUserPrompt(situation, proposal, lang) {
 export async function analyze(data, situation, proposal) {
   const settings = getSettings();
   if (!settings.apiKey) {
-    const err = new Error('NO_KEY');
-    err.code = 'NO_KEY';
+    const err = apiError('NO_KEY', '', 0);
     throw err;
   }
+  const info = getProviderInfo(settings.provider);
   const lang = settings.responseLang === 'auto' ? getLang() : settings.responseLang;
   const systemPrompt = buildSystemPrompt(data, lang);
   const userPrompt = buildUserPrompt(situation, proposal, lang);
 
   let raw;
-  if (settings.provider === 'gemini') {
-    raw = await callGemini(settings, systemPrompt, userPrompt);
+  if (info.apiType === 'gemini') {
+    raw = await callGemini(settings, info, systemPrompt, userPrompt);
   } else {
-    raw = await callGroq(settings, systemPrompt, userPrompt);
+    raw = await callOpenAICompatible(settings, info, systemPrompt, userPrompt);
   }
   return parseResult(raw, data);
 }
 
-async function callGemini(settings, systemPrompt, userPrompt) {
-  const info = PROVIDERS.gemini;
+async function callGemini(settings, info, systemPrompt, userPrompt) {
   const candidates = settings.model ? [settings.model, ...info.modelFallbacks] : info.modelFallbacks;
   const seen = new Set();
   let lastErr = null;
@@ -147,16 +177,15 @@ async function callGemini(settings, systemPrompt, userPrompt) {
   throw lastErr || apiError('ALL_MODELS_FAILED', '', 0);
 }
 
-async function callGroq(settings, systemPrompt, userPrompt) {
-  const info = PROVIDERS.groq;
+async function callOpenAICompatible(settings, info, systemPrompt, userPrompt) {
   const candidates = settings.model ? [settings.model, ...info.modelFallbacks] : info.modelFallbacks;
   const seen = new Set();
   let lastErr = null;
+  const url = `${info.baseUrl}/chat/completions`;
 
   for (const model of candidates) {
     if (seen.has(model)) continue;
     seen.add(model);
-    const url = 'https://api.groq.com/openai/v1/chat/completions';
     const body = {
       model,
       messages: [
@@ -166,9 +195,12 @@ async function callGroq(settings, systemPrompt, userPrompt) {
       response_format: { type: 'json_object' },
       temperature: 0.7,
     };
+    const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${settings.apiKey}` };
+    if (info.extraHeaders) Object.assign(headers, info.extraHeaders);
+
     const res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${settings.apiKey}` },
+      headers,
       body: JSON.stringify(body),
     });
     if (res.ok) {
@@ -180,8 +212,12 @@ async function callGroq(settings, systemPrompt, userPrompt) {
     }
     const errBody = await res.text().catch(() => '');
     const parsed = parseOpenAIError(errBody);
-    if (res.status === 404 || parsed.status === 'NOT_FOUND') {
+    if (res.status === 404 || parsed.status === 'NOT_FOUND' || /not found|does not exist|deprecat/i.test(parsed.message)) {
       lastErr = apiError(`HTTP_${res.status}`, parsed.message, res.status, parsed.status);
+      continue;
+    }
+    if (res.status === 429) {
+      lastErr = apiError(`HTTP_429`, parsed.message, 429, parsed.status);
       continue;
     }
     throw apiError(`HTTP_${res.status}`, parsed.message, res.status, parsed.status);
@@ -189,56 +225,60 @@ async function callGroq(settings, systemPrompt, userPrompt) {
   throw lastErr || apiError('ALL_MODELS_FAILED', '', 0);
 }
 
-export async function testConnection(provider, apiKey, model) {
+export async function testConnection(providerId, apiKey, model) {
   if (!apiKey) return { ok: false, message: 'NO_KEY' };
-  if (provider === 'gemini') return testGemini(apiKey, model);
-  return testGroq(apiKey, model);
+  const info = getProviderInfo(providerId);
+  if (info.apiType === 'gemini') return testGemini(apiKey, model, info);
+  return testOpenAICompatible(apiKey, model, info);
 }
 
-async function testGemini(apiKey, model) {
+async function testGemini(apiKey, model, info) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${encodeURIComponent(apiKey)}`;
   try {
     const res = await fetch(url);
     if (!res.ok) {
       const body = await res.text().catch(() => '');
       const parsed = parseGeminiError(body);
-      return { ok: false, status: res.status, message: parsed.message, statusText: parsed.status, isRegionBlock: parsed.isRegionBlock };
+      return { ok: false, status: res.status, message: parsed.message, isRegionBlock: parsed.isRegionBlock };
     }
     const json = await res.json();
     const models = (json.models || [])
       .filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
       .map(m => m.name.replace(/^models\//, ''));
     if (models.length === 0) return { ok: false, message: 'No text models available for this key.' };
-    const preferred = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-flash-latest', 'gemini-1.5-flash'];
-    const pick = model && models.includes(model) ? model : preferred.find(m => models.includes(m)) || models[0];
+    const pick = model && models.includes(model) ? model : info.modelFallbacks.find(m => models.includes(m)) || models[0];
     return { ok: true, models, recommended: pick };
   } catch (e) {
     return { ok: false, message: e.message };
   }
 }
 
-async function testGroq(apiKey, model) {
-  const url = 'https://api.groq.com/openai/v1/models';
+async function testOpenAICompatible(apiKey, model, info) {
+  const url = `${info.baseUrl}/models`;
   try {
-    const res = await fetch(url, { headers: { Authorization: `Bearer ${apiKey}` } });
+    const headers = { Authorization: `Bearer ${apiKey}` };
+    if (info.extraHeaders) Object.assign(headers, info.extraHeaders);
+    const res = await fetch(url, { headers });
     if (!res.ok) {
       const body = await res.text().catch(() => '');
       const parsed = parseOpenAIError(body);
-      return { ok: false, status: res.status, message: parsed.message, statusText: parsed.status };
+      return { ok: false, status: res.status, message: parsed.message };
     }
     const json = await res.json();
-    const models = (json.data || []).map(m => m.id);
-    const preferred = ['llama-3.3-70b-versatile', 'llama-3.1-70b-versatile', 'llama-3.1-8b-instant'];
-    const pick = model && models.includes(model) ? model : preferred.find(m => models.includes(m)) || models[0];
-    return { ok: true, models, recommended: pick };
+    const models = (json.data || json.models || []).map(m => m.id || m.name || '');
+    const filtered = models.filter(Boolean);
+    if (filtered.length === 0) return { ok: false, message: 'No models returned for this key.' };
+    const pick = model && filtered.includes(model) ? model : info.modelFallbacks.find(m => filtered.includes(m)) || filtered[0];
+    return { ok: true, models: filtered, recommended: pick };
   } catch (e) {
     return { ok: false, message: e.message };
   }
 }
 
 function parseResult(raw, data) {
+  const cleaned = extractJson(raw);
   let obj;
-  try { obj = JSON.parse(raw); }
+  try { obj = JSON.parse(cleaned); }
   catch { throw apiError('PARSE_FAIL', '', 0); }
 
   const recs = (obj.recommendations || []).map(r => {
@@ -252,6 +292,18 @@ function parseResult(raw, data) {
   }));
 
   return { recommendations: recs, strategies };
+}
+
+function extractJson(text) {
+  if (!text) return '';
+  let s = text.trim();
+  const fence = s.match(/```(?:json)?\s*([\s\S]*?)```/i);
+  if (fence) s = fence[1].trim();
+  if (s.startsWith('{') || s.startsWith('[')) return s;
+  const first = s.indexOf('{');
+  const last = s.lastIndexOf('}');
+  if (first >= 0 && last > first) return s.slice(first, last + 1);
+  return s;
 }
 
 function parseGeminiError(body) {
@@ -270,7 +322,7 @@ function parseOpenAIError(body) {
   let message = '', status = '';
   try {
     const j = JSON.parse(body);
-    message = j?.error?.message || '';
+    message = j?.error?.message || j?.message || '';
     status = j?.error?.type || j?.error?.code || '';
   } catch { message = body.slice(0, 200); }
   return { message, status };
