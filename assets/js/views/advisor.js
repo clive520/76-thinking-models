@@ -1,5 +1,5 @@
 import { ui, getLang, catName } from '../i18n.js';
-import { getSettings, saveSettings, hasKey, analyze, getProviders, getProviderInfo } from '../ai-client.js';
+import { getSettings, saveSettings, hasKey, analyze, getProviders, getProviderInfo, testConnection } from '../ai-client.js';
 
 let working = false;
 
@@ -51,6 +51,11 @@ export function render(data, app, query) {
             <p class="hint">${ui('apiKeyHint')} <a href="#" id="keyUrl" target="_blank" rel="noopener">${ui('getKey')}</a></p>
           </div>
           <div class="form-group">
+            <label>${ui('modelLabel')}</label>
+            <input type="text" id="modelInput" value="${settings.model || ''}" placeholder="${ui('modelPlaceholder')}" autocomplete="off" />
+            <p class="hint" id="modelHint"></p>
+          </div>
+          <div class="form-group">
             <label>${ui('resultInLang')}</label>
             <select id="respLang">
               <option value="auto" ${settings.responseLang === 'auto' ? 'selected' : ''}>${ui('followLang')}</option>
@@ -58,8 +63,12 @@ export function render(data, app, query) {
               <option value="en" ${settings.responseLang === 'en' ? 'selected' : ''}>English</option>
             </select>
           </div>
-          <button id="saveSettings" class="btn btn-secondary">💾 ${ui('save')}</button>
-          <span id="saveStatus" class="hint" style="margin-left:8px"></span>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button id="testBtn" class="btn btn-secondary">🔌 ${ui('testConnection')}</button>
+            <button id="saveSettings" class="btn btn-primary">💾 ${ui('save')}</button>
+            <span id="saveStatus" class="hint"></span>
+          </div>
+          <div id="testResult" style="margin-top:12px"></div>
         </div>
       </div>
 
@@ -80,12 +89,16 @@ function bind(data, prefillModel) {
     document.getElementById('settingsPanel').classList.toggle('open');
   });
 
-  document.getElementById('providerSelect').addEventListener('change', updateProviderHint);
+  document.getElementById('providerSelect').addEventListener('change', () => {
+    updateProviderHint();
+    document.getElementById('modelInput').value = '';
+  });
 
   document.getElementById('saveSettings').addEventListener('click', () => {
     const next = saveSettings({
       provider: document.getElementById('providerSelect').value,
       apiKey: document.getElementById('apiKeyInput').value.trim(),
+      model: document.getElementById('modelInput').value.trim(),
       responseLang: document.getElementById('respLang').value,
     });
     const status = document.getElementById('keyStatus');
@@ -96,6 +109,7 @@ function bind(data, prefillModel) {
     setTimeout(() => { sv.textContent = ''; }, 2000);
   });
 
+  document.getElementById('testBtn').addEventListener('click', runTest);
   document.getElementById('analyzeBtn').addEventListener('click', () => runAnalyze(data, prefillModel));
 }
 
@@ -103,10 +117,64 @@ function updateProviderHint() {
   const id = document.getElementById('providerSelect').value;
   const info = getProviderInfo(id);
   const lang = getLang();
-  const hint = document.getElementById('providerHint');
-  hint.innerHTML = `${info.keyHint[lang]} <a href="${info.keyUrl}" target="_blank" rel="noopener">${info.keyUrl}</a>`;
+  document.getElementById('providerHint').innerHTML = info.keyHint[lang] + ' <a href="' + info.keyUrl + '" target="_blank" rel="noopener">' + info.keyUrl + '</a>';
   const keyUrl = document.getElementById('keyUrl');
-  if (keyUrl) { keyUrl.href = info.keyUrl; }
+  if (keyUrl) keyUrl.href = info.keyUrl;
+  const modelHint = document.getElementById('modelHint');
+  if (modelHint) modelHint.textContent = info.modelHint[lang];
+}
+
+async function runTest() {
+  const lang = getLang();
+  const provider = document.getElementById('providerSelect').value;
+  const apiKey = document.getElementById('apiKeyInput').value.trim();
+  const model = document.getElementById('modelInput').value.trim();
+  const out = document.getElementById('testResult');
+
+  if (!apiKey) {
+    out.innerHTML = `<div class="error-msg">${lang === 'en' ? 'Please enter an API key first.' : '請先輸入 API Key。'}</div>`;
+    return;
+  }
+
+  const btn = document.getElementById('testBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ ' + (lang === 'en' ? 'Testing…' : '測試中…');
+  out.innerHTML = `<div class="loading"><span class="spinner"></span>${lang === 'en' ? 'Testing connection…' : '測試連線中…'}</div>`;
+
+  try {
+    const result = await testConnection(provider, apiKey, model);
+    if (result.ok) {
+      const modelsList = result.models.slice(0, 12).join(', ') + (result.models.length > 12 ? '…' : '');
+      out.innerHTML = `
+        <div class="api-status ok" style="padding:14px;background:rgba(107,207,127,0.1);border:1px solid rgba(107,207,127,0.3);border-radius:8px">
+          ✅ ${lang === 'en' ? 'Connection OK!' : '連線成功！'}<br>
+          <strong>${lang === 'en' ? 'Recommended model' : '建議模型'}:</strong> <code>${result.recommended}</code><br>
+          <details style="margin-top:6px"><summary style="cursor:pointer;color:var(--text-muted)">${lang === 'en' ? 'Available models' : '可用模型'} (${result.models.length})</summary><div style="margin-top:6px;font-size:0.85rem;color:var(--text-muted)">${modelsList}</div></details>
+        </div>`;
+      const modelInput = document.getElementById('modelInput');
+      if (!modelInput.value.trim()) modelInput.value = result.recommended;
+    } else {
+      const msg = result.message || 'Unknown error';
+      const isRegion = result.isRegionBlock || (msg.includes('location') && msg.includes('billing'));
+      out.innerHTML = `
+        <div class="error-msg">
+          ❌ ${lang === 'en' ? 'Connection failed' : '連線失敗'} (HTTP ${result.status || '?'})<br>
+          <span style="font-size:0.9rem">${escapeHtml(msg)}</span>
+          ${isRegion ? `
+            <div style="margin-top:10px;padding:10px;background:rgba(255,180,84,0.1);border-radius:6px;border:1px solid rgba(255,180,84,0.3)">
+              ⚠️ <strong>${lang === 'en' ? 'Region restriction detected.' : '偵測到地區限制。'}</strong>
+              ${lang === 'en'
+                ? 'Gemini free tier is not available in your region. Options: (1) Link a billing account to your Google AI project (paid, pay-per-use); (2) Switch to <strong>Groq</strong> which has no region restrictions.'
+                : 'Gemini 免費層在你的地區無法使用。可選：(1) 在 Google AI 專案綁定計費帳戶（付費，按用量計）；(2) 切換到 <strong>Groq</strong>，無地區限制。'}
+            </div>` : ''}
+        </div>`;
+    }
+  } catch (e) {
+    out.innerHTML = `<div class="error-msg">${escapeHtml(e.message)}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🔌 ' + ui('testConnection');
+  }
 }
 
 async function runAnalyze(data, prefillModel) {
@@ -196,20 +264,42 @@ function renderError(err, lang) {
   if (err.code === 'NO_KEY') {
     return `<div class="error-msg">${ui('noKeyWarn')}</div>`;
   }
-  let msg = ui('errorGeneric');
-  if (err.code && err.code.startsWith('HTTP_')) {
-    const status = err.code.replace('HTTP_', '');
-    if (status === '400' || status === '401' || status === '403') {
-      msg = lang === 'en' ? 'API key invalid or request rejected. Please check your key.' : 'API Key 無效或請求被拒，請檢查金鑰。';
-    } else if (status === '429') {
-      msg = lang === 'en' ? 'Rate limit reached — wait a moment and retry.' : '已達免費額度上限，請稍後再試。';
-    } else {
-      msg = `${msg} (HTTP ${status})`;
+
+  const apiMsg = err.message || '';
+  const isRegion = err.isRegionBlock || (apiMsg.includes('location') && apiMsg.includes('billing'));
+
+  if (err.code === 'HTTP_429') {
+    if (isRegion) {
+      return `<div class="error-msg">
+        ❌ ${lang === 'en' ? '<strong>Region restriction</strong>' : '<strong>地區限制</strong>'}
+        <div style="margin-top:8px">${escapeHtml(apiMsg)}</div>
+        <div style="margin-top:10px;padding:10px;background:rgba(255,180,84,0.1);border-radius:6px;border:1px solid rgba(255,180,84,0.3)">
+          ⚠️ ${lang === 'en'
+            ? 'Gemini free tier is not available in your region. <strong>Switch to Groq</strong> in Settings (no region restrictions), or link a billing account to your Google AI project.'
+            : 'Gemini 免費層在你的地區無法使用。請在設定中<strong>切換到 Groq</strong>（無地區限制），或在 Google AI 專案綁定計費帳戶。'}
+        </div>
+      </div>`;
     }
-  } else if (err.code === 'PARSE_FAIL') {
-    msg = lang === 'en' ? 'AI response could not be parsed. Try again.' : 'AI 回應格式無法解析，請重試。';
-  } else if (err.code === 'EMPTY_RESPONSE') {
-    msg = lang === 'en' ? 'AI returned an empty response. Try again.' : 'AI 回應為空，請重試。';
+    return `<div class="error-msg">⏳ ${lang === 'en' ? 'Rate limit reached — wait a minute and retry.' : '已達速率限制，請稍候一分鐘再試。'}<br><span style="font-size:0.85rem">${escapeHtml(apiMsg)}</span></div>`;
   }
-  return `<div class="error-msg">${msg}</div>`;
+  if (err.code === 'HTTP_404') {
+    return `<div class="error-msg">❌ ${lang === 'en' ? 'Model not found. The model may have been deprecated. Use the "Test connection" button to find available models.' : '找不到模型，可能已被淘汰。請用「測試連線」按鈕查詢可用模型。'}<br><span style="font-size:0.85rem">${escapeHtml(apiMsg)}</span></div>`;
+  }
+  if (err.code === 'HTTP_401' || err.code === 'HTTP_403') {
+    return `<div class="error-msg">🔑 ${lang === 'en' ? 'API key invalid or access denied. Check your key.' : 'API Key 無效或被拒，請檢查金鑰。'}<br><span style="font-size:0.85rem">${escapeHtml(apiMsg)}</span></div>`;
+  }
+  if (err.code === 'PARSE_FAIL') {
+    return `<div class="error-msg">${lang === 'en' ? 'AI response could not be parsed. Try again.' : 'AI 回應格式無法解析，請重試。'}</div>`;
+  }
+  if (err.code === 'EMPTY_RESPONSE') {
+    return `<div class="error-msg">${lang === 'en' ? 'AI returned an empty response. Try again.' : 'AI 回應為空，請重試。'}</div>`;
+  }
+  if (err.code === 'ALL_MODELS_FAILED') {
+    return `<div class="error-msg">${lang === 'en' ? 'All model options failed. Use "Test connection" to check available models.' : '所有模型皆失敗，請用「測試連線」檢查可用模型。'}<br><span style="font-size:0.85rem">${escapeHtml(apiMsg)}</span></div>`;
+  }
+  return `<div class="error-msg">${ui('errorGeneric')}<br><span style="font-size:0.85rem;color:var(--text-muted)">${escapeHtml(apiMsg || err.code)}</span></div>`;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
