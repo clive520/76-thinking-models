@@ -1,0 +1,2376 @@
+{
+  "meta": {
+    "title_zh": "76 個人類思考模式",
+    "title_en": "76 Thinking Models",
+    "subtitle_zh": "認識思考工具，升級你的決策品質",
+    "subtitle_en": "Mental tools to upgrade your decision-making",
+    "version": "1.0.0",
+    "license": "CC BY 4.0"
+  },
+  "categories": [
+    { "id": "decision", "name_zh": "決策與判斷", "name_en": "Decision & Judgment", "icon": "balance-scale" },
+    { "id": "systems", "name_zh": "系統與複雜性", "name_en": "Systems & Complexity", "icon": "project-diagram" },
+    { "id": "psychology", "name_zh": "心理與認知偏誤", "name_en": "Psychology & Cognitive Biases", "icon": "brain" },
+    { "id": "economics", "name_zh": "經濟與策略", "name_en": "Economics & Strategy", "icon": "chart-line" },
+    { "id": "probability", "name_zh": "機率與統計", "name_en": "Probability & Statistics", "icon": "dice" },
+    { "id": "nature", "name_zh": "物理與生物類比", "name_en": "Physics & Biology Analogies", "icon": "leaf" }
+  ],
+  "models": [
+    {
+      "id": "inversion",
+      "number": 1,
+      "category": "decision",
+      "name_zh": "逆向思考",
+      "name_en": "Inversion",
+      "definition_zh": "不問「如何才能成功」，而是問「如何一定會失敗」，然後全力避免那些事。透過消除反面來逼近目標。",
+      "definition_en": "Instead of asking how to succeed, ask how to guarantee failure, then avoid those things. Approach the goal by eliminating its opposite.",
+      "scenarios_zh": "風險管理、長期規劃、避免重大不可逆錯誤的決策情境。",
+      "scenarios_en": "Risk management, long-term planning, and decisions where catastrophic irreversible errors must be avoided.",
+      "cases": [
+        {
+          "title_zh": "投資避險",
+          "title_en": "Investment Risk Avoidance",
+          "desc_zh": "一位投資人不問「如何選到飆股」，而是問「如何一定會破產」——融資過度、押單一標的、聽信明牌。避開這三者後，報酬自然穩健累積。",
+          "desc_en": "An investor asks not 'how to pick winners' but 'how to go bankrupt' — over-leverage, single-stock bets, and hot tips. Avoiding all three, returns compound steadily."
+        },
+        {
+          "title_zh": "創業存活",
+          "title_en": "Startup Survival",
+          "desc_zh": "新創團隊列出「保證倒閉」的條件：現金燒光、忽視客戶、合夥人內鬨。把清單貼在牆上逐項防範，存活率大幅提升。",
+          "desc_en": "A startup lists conditions that guarantee failure: running out of cash, ignoring customers, founder conflict. Pinning the list up and guarding each item boosts survival."
+        },
+        {
+          "title_zh": "健康維持",
+          "title_en": "Health Maintenance",
+          "desc_zh": "與其追求極致養生，先列「怎樣一定會搞壞身體」：熬夜、久坐、暴飲暴食。戒除這些，比任何保健食品都有效。",
+          "desc_en": "Rather than chasing optimal wellness, list what surely ruins health: sleep deprivation, sedentary days, binge eating. Quitting these beats any supplement."
+        }
+      ]
+    },
+    {
+      "id": "second-order-thinking",
+      "number": 2,
+      "category": "decision",
+      "name_zh": "二階思考",
+      "name_en": "Second-Order Thinking",
+      "definition_zh": "不只問「然後呢？」的第一層結果，更追問第二層、第三層的連鎖後果。多想一步，才能看清短期誘因的長期代價。",
+      "definition_en": "Beyond the immediate 'then what?',追问 the second- and third-level chain of consequences. Thinking one step further reveals the long-term cost of short-term incentives.",
+      "scenarios_zh": "政策制定、定價策略、任何有連鎖反應的長期決策。",
+      "scenarios_en": "Policy-making, pricing strategy, any long-term decision with ripple effects.",
+      "cases": [
+        {
+          "title_zh": "租金管制",
+          "title_en": "Rent Control",
+          "desc_zh": "一階：租客負擔減輕。二階：房東不再維修、新建案停滯。三階：十年後住房更短缺，租客反而更難找屋。短期的善意釀成長期危機。",
+          "desc_en": "First order: tenants pay less. Second: landlords stop maintaining, new builds stall. Third: a decade later housing is scarcer and harder to find. Short-term goodwill breeds long-term crisis."
+        },
+        {
+          "title_zh": "免費續訂優惠",
+          "title_en": "Free Trial Auto-Renewal",
+          "desc_zh": "一階：轉換率上升。二階：使用者發現後覺得被騙、大量退訂並留下負評。三階：品牌信任崩塌，獲客成本反而上升。",
+          "desc_en": "First order: conversion rises. Second: users feel tricked, churn and leave bad reviews. Third: brand trust collapses, acquisition cost climbs instead."
+        },
+        {
+          "title_zh": "降價衝量",
+          "title_en": "Price Cut for Volume",
+          "desc_zh": "一階：銷量爆增。二階：毛利壓縮、品牌定位下滑、通路要求比照。三階：一旦想調回原價，顧客已不買單，陷入低毛利陷阱。",
+          "desc_en": "First order: sales surge. Second: margins thin, brand positioning drops, channels demand the same deal. Third: raising prices back fails — a low-margin trap."
+        }
+      ]
+    },
+    {
+      "id": "opportunity-cost",
+      "number": 3,
+      "category": "decision",
+      "name_zh": "機會成本",
+      "name_en": "Opportunity Cost",
+      "definition_zh": "選擇 A 的真正成本，不是花掉的錢，而是因此放棄的最佳選項 B 的價值。每個「要」都伴隨一個「不要」。",
+      "definition_en": "The true cost of choosing A is not the money spent but the value of the best alternative B you gave up. Every 'yes' implies a 'no'.",
+      "scenarios_zh": "資源分配、時間管理、投資取捨。",
+      "scenarios_en": "Resource allocation, time management, investment trade-offs.",
+      "cases": [
+        {
+          "title_zh": "讀研究所",
+          "title_en": "Graduate School",
+          "desc_zh": "讀碩士兩年的成本不只學費，還有兩年薪資與工作經驗的累積。若這兩年能在職場晉升，機會成本可能遠超學費。",
+          "desc_en": "Two years of grad school cost more than tuition — they cost two years of salary and experience. If those years could earn a promotion, the opportunity cost may exceed tuition."
+        },
+        {
+          "title_zh": "自建房 vs 買房",
+          "title_en": "Build vs Buy a Home",
+          "desc_zh": "自建房看似省下營建利潤，但投入的兩年心力若用於本業，可能賺回更多。把「時間價值」算進成本，結論常會反轉。",
+          "desc_en": "Self-building seems to save the builder's margin, but two years of focus diverted from one's career might earn more. Counting 'time value' often flips the conclusion."
+        },
+        {
+          "title_zh": "會議成本",
+          "title_en": "The Cost of Meetings",
+          "desc_zh": "一場十人一小時的會，真實成本是十小時薪資，加上這十人本可產出的價值。算進機會成本，許多會議根本不該開。",
+          "desc_en": "A ten-person one-hour meeting truly costs ten hours of pay plus the value those ten could have produced. Priced with opportunity cost, many meetings shouldn't happen."
+        }
+      ]
+    },
+    {
+      "id": "sunk-cost-fallacy",
+      "number": 4,
+      "category": "decision",
+      "name_zh": "沉沒成本謬誤",
+      "name_en": "Sunk Cost Fallacy",
+      "definition_zh": "已經付出且無法收回的成本（金錢、時間、心力），不該影響未來決策。理性選擇只看「未來的邊際成本與收益」。",
+      "definition_en": "Costs already paid and irrecoverable (money, time, effort) should not affect future decisions. Rational choices look only at future marginal costs and benefits.",
+      "scenarios_zh": "專案止損、關係取捨、投資認賠。",
+      "scenarios_en": "Project termination, ending relationships, cutting investment losses.",
+      "cases": [
+        {
+          "title_zh": "爛尾專案",
+          "title_en": "The Sunk Project",
+          "desc_zh": "團隊已投入半年開發一套市場已不需要的系統。「都做一半了」讓大家不敢喊停，又燒半年。正解：看未來投入能否換回價值，不能就立刻停損。",
+          "desc_en": "A team has spent six months on a system the market no longer needs. 'We're halfway done' stops them quitting — and they burn six more. The fix: judge by future value, not past spend."
+        },
+        {
+          "title_zh": "看完爛電影",
+          "title_en": "Finishing a Bad Movie",
+          "desc_zh": "電影票錢已花，再坐兩小時只會「再賠」兩小時。離場把時間拿去做別的事，才是把沉沒成本留在過去。",
+          "desc_en": "The ticket is paid; sitting two more hours only 'costs' two more hours. Leaving to do something else leaves the sunk cost in the past where it belongs."
+        },
+        {
+          "title_zh": "套牢股票",
+          "title_en": "Bag-Holding a Stock",
+          "desc_zh": "買在高點的股票跌三成，「不賣就沒虧」是自我安慰。該問的是：這筆錢若現在重新配置，哪裡未來報酬更高？與當初買價無關。",
+          "desc_en": "A stock bought at the peak falls 30%; 'no loss until sold' is self-comfort. The real question: where would this capital earn more going forward? The purchase price is irrelevant."
+        }
+      ]
+    },
+    {
+      "id": "cost-benefit-analysis",
+      "number": 5,
+      "category": "decision",
+      "name_zh": "成本效益分析",
+      "name_en": "Cost-Benefit Analysis",
+      "definition_zh": "把決策的所有成本與效益盡可能量化並列表比較，計算淨效益後再決定。難以量化的項目也要顯性化，避免直覺遺漏。",
+      "definition_en": "Quantify and list all costs and benefits of a decision, then compare net value before deciding. Even hard-to-quantify items should be made explicit to avoid intuitive omissions.",
+      "scenarios_zh": "採購決策、專案評估、公共政策。",
+      "scenarios_en": "Procurement decisions, project evaluation, public policy.",
+      "cases": [
+        {
+          "title_zh": "設備升級",
+          "title_en": "Equipment Upgrade",
+          "desc_zh": "買新機台要價 200 萬，但每年省電省工 60 萬、良率提升多賺 30 萬。三年回本、五年淨賺 250 萬，量化後決策一目了然。",
+          "desc_en": "A new machine costs 2M but saves 600k/year in energy and labor and earns 300k more from yield. Payback in 3 years, 2.5M net in five — quantified, the choice is clear."
+        },
+        {
+          "title_zh": "通勤搬家",
+          "title_en": "Relocating to Cut Commute",
+          "desc_zh": "搬到公司附近月租多付 8000，但每天省兩小時通勤。兩小時若用於兼職或進修價值遠超 8000，加上疲勞減少，淨效益為正。",
+          "desc_en": "Rent near work costs 8,000 more monthly but saves two commute hours daily. If those hours earn or learn more than 8,000, plus less fatigue, net benefit is positive."
+        },
+        {
+          "title_zh": "導入新系統",
+          "title_en": "Adopting a New System",
+          "desc_zh": "系統授權便宜，但員工培訓、資料移轉、過渡期效率下降等隱性成本常被忽略。完整列出後才發現總成本是授權費的三倍。",
+          "desc_en": "The license is cheap, but hidden costs — training, data migration, transition slowdowns — are often ignored. Listed fully, total cost turns out triple the license fee."
+        }
+      ]
+    },
+    {
+      "id": "marginal-thinking",
+      "number": 6,
+      "category": "decision",
+      "name_zh": "邊際思考",
+      "name_en": "Marginal Thinking",
+      "definition_zh": "決策只看「多投入一單位」能換回「多少額外產出」，不看平均或歷史總量。當邊際收益低於邊際成本，就該停止加碼。",
+      "definition_en": "Decide by the extra output one more unit of input yields, not by averages or past totals. Stop adding when marginal benefit falls below marginal cost.",
+      "scenarios_zh": "生產規模、行銷預算、學習投入。",
+      "scenarios_en": "Production scale, marketing budget, learning effort.",
+      "cases": [
+        {
+          "title_zh": "廣告投放",
+          "title_en": "Ad Spend Scaling",
+          "desc_zh": "前 10 萬廣告帶來 50 萬營收，再加 10 萬只多帶 15 萬。邊際報酬遞減，最佳預算不是「越多越好」，而是停在邊際收益等於邊際成本處。",
+          "desc_en": "The first 100k of ads brings 500k revenue; the next 100k only 150k more. Diminishing returns mean the optimal budget isn't 'more is better' but where marginal revenue equals marginal cost."
+        },
+        {
+          "title_zh": "考試衝分",
+          "title_en": "Exam Score Optimization",
+          "desc_zh": "從 80 分進步到 90 分要 10 小時，90 到 95 分卻要 30 小時。同樣時間補弱科可能從 60 到 80，邊際效益更高。",
+          "desc_en": "Going 80→90 takes 10 hours, but 90→95 takes 30. The same hours on a weak subject might lift 60→80 — far better marginal return."
+        },
+        {
+          "title_zh": "工廠增產",
+          "title_en": "Factory Output",
+          "desc_zh": "產線加班第一小時多產 100 件，第四小時因疲勞只多 30 件，還增加不良品。邊際思考指出加班三小時即該收手。",
+          "desc_en": "The first overtime hour adds 100 units; the fourth adds only 30 with more defects. Marginal thinking says stop after three overtime hours."
+        }
+      ]
+    },
+    {
+      "id": "hanlons-razor",
+      "number": 7,
+      "category": "decision",
+      "name_zh": "漢隆剃刀",
+      "name_en": "Hanlon's Razor",
+      "definition_zh": "「能以無能解釋的，就不要歸咎於惡意。」多數看似惡意的行為，其實出自疏忽、無知或惰性。先假設無害，可避免過度解讀。",
+      "definition_en": "'Never attribute to malice that which is adequately explained by incompetence.' Most seemingly malicious acts stem from carelessness, ignorance, or inertia. Assume non-malice first to avoid over-reading.",
+      "scenarios_zh": "人際誤會、職場衝突、解讀他人行為時。",
+      "scenarios_en": "Interpersonal misunderstandings, workplace conflict, interpreting others' behavior.",
+      "cases": [
+        {
+          "title_zh": "同事漏回信",
+          "title_en": "The Unanswered Email",
+          "desc_zh": "同事沒回重要郵件，直覺認為他在搞你。其實多半是信太多漏看、或以為別人會回。先假設無心，禮貌追問，往往比對峙更快解決。",
+          "desc_en": "A colleague ignores a key email and you assume sabotage. Usually it's an overflowing inbox or thinking someone else replied. Assuming oversight and politely following up resolves it faster than confrontation."
+        },
+        {
+          "title_zh": "客服冷態度",
+          "title_en": "Cold Customer Service",
+          "desc_zh": "店員態度冷淡，未必是針對你，可能連續加班、私人煩心事或訓練不足。認清這點，你的情緒不會被他人的狀態綁架。",
+          "desc_en": "A clerk's coldness likely isn't about you — overtime, personal stress, or poor training. Recognizing this, your mood isn't hijacked by their state."
+        },
+        {
+          "title_zh": "鄰居噪音",
+          "title_en": "Noisy Neighbor",
+          "desc_zh": "樓上深夜拖椅子的巨響，未必是故意挑釁，而是不知道隔音差。善意溝通一次，通常比報警或報復更有效。",
+          "desc_en": "The upstairs chair-dragging at midnight likely isn't provocation but ignorance of poor soundproofing. A friendly word once usually beats calling the cops or retaliating."
+        }
+      ]
+    },
+    {
+      "id": "occams-razor",
+      "number": 8,
+      "category": "decision",
+      "name_zh": "奧坎剃刀",
+      "name_en": "Occam's Razor",
+      "definition_zh": "「當多個解釋都能說明現象時，選擇假設最少的那個。」越簡單的解釋通常越可能為真，因為每多一個假設就多一份出錯機會。",
+      "definition_en": "'Among competing explanations, choose the one with the fewest assumptions.' The simpler explanation is usually more likely true, since each added assumption adds a chance to be wrong.",
+      "scenarios_zh": "除錯、診斷問題、判斷事件原因。",
+      "scenarios_en": "Debugging, diagnosing problems, judging the cause of events.",
+      "cases": [
+        {
+          "title_zh": "網站連不上",
+          "title_en": "Website Won't Load",
+          "desc_zh": "網頁打不開，與其猜伺服器被駭、DNS 遭投毒，先檢查最簡單的：Wi-Fi 沒連。八成問題出在最平凡的環節。",
+          "desc_en": "A page won't load. Before suspecting a hack or DNS poisoning, check the simplest: Wi-Fi is off. Eight times in ten the cause is the most ordinary link."
+        },
+        {
+          "title_zh": "身體不適",
+          "title_en": "Feeling Unwell",
+          "desc_zh": "頭痛加上疲倦，不必立刻聯想到罕見疾病，先考慮最常見的：睡眠不足、脫水、壓力。排除簡單原因後再往複雜查。",
+          "desc_en": "Headache plus fatigue needn't suggest a rare disease — first consider the common: poor sleep, dehydration, stress. Rule out simple causes before complex ones."
+        },
+        {
+          "title_zh": "銷量下滑",
+          "title_en": "Dropping Sales",
+          "desc_zh": "業績下滑，與其歸因於「市場結構性轉變」這種大假設，先查：競品降價、自家斷貨、廣告停投。簡單原因常是主因。",
+          "desc_en": "Sales dip. Before blaming 'structural market shift' — a big assumption — check: a rival cut prices, you stocked out, ads paused. Simple causes are often the main ones."
+        }
+      ]
+    },
+    {
+      "id": "circle-of-competence",
+      "number": 9,
+      "category": "decision",
+      "name_zh": "能力圈",
+      "name_en": "Circle of Competence",
+      "definition_zh": "每個人都有自己真正懂的領域邊界。在圈內決策勝率高，在圈外則容易犯錯。關鍵是「知道自己不知道」，並留在圈內。",
+      "definition_en": "Everyone has a boundary of what they truly understand. Decisions inside the circle win more; outside it, errors loom. The key is knowing what you don't know and staying inside.",
+      "scenarios_zh": "投資選股、創業選題、職涯選擇。",
+      "scenarios_en": "Stock picking, choosing a startup idea, career choices.",
+      "cases": [
+        {
+          "title_zh": "跨足陌生產業",
+          "title_en": "Entering an Unfamiliar Industry",
+          "desc_zh": "科技人憑熱情投資餐飲，卻不懂食材成本與翻桌率，半年虧光。在自己懂的科技領域加碼，反而穩定獲利。認清邊界就是保護本金。",
+          "desc_en": "A techie invests in restaurants out of passion but doesn't grasp food cost or table turnover — and loses it all in six months. Doubling down on tech, the circle he knows, pays steadily. Knowing the boundary protects capital."
+        },
+        {
+          "title_zh": "專家發言越界",
+          "title_en": "The Expert Who Overreaches",
+          "desc_zh": "知名醫師對總體經濟高談闊論，媒體照單全收，但那是他的圈外。聽者若不分領域全信，會被「光環」誤導。",
+          "desc_en": "A famous doctor opines confidently on macroeconomics — outside his circle. Media airs it all. Listeners who trust him across fields are misled by the 'halo'."
+        },
+        {
+          "title_zh": "擴圈策略",
+          "title_en": "Expanding the Circle",
+          "desc_en": "Rather than betting big in a new field, study it for a year with small stakes first. The circle grows only by deliberate learning, not by bravado. Stay inside until the boundary truly moves.",
+          "desc_zh": "與其在新領域重壓，先用小額試水、研究一年再說。能力圈只能靠刻意學習擴大，不是靠膽量。在邊界真正移動前，先留在圈內。"
+        }
+      ]
+    },
+    {
+      "id": "contrast-principle",
+      "number": 10,
+      "category": "decision",
+      "name_zh": "對比原理",
+      "name_en": "Contrast Principle",
+      "definition_zh": "人對價值與感受的判斷深受「先前的對比物」影響，而非絕對標準。先呈現極端選項，會讓後續選項顯得便宜或平凡。",
+      "definition_en": "Judgments of value and feeling are shaped by the prior comparison item, not by absolute standards. Showing an extreme option first makes later ones seem cheap or ordinary.",
+      "scenarios_zh": "定價策略、談判、說服與銷售。",
+      "scenarios_en": "Pricing strategy, negotiation, persuasion and sales.",
+      "cases": [
+        {
+          "title_zh": "菜單錨定",
+          "title_en": "Menu Anchoring",
+          "desc_zh": "餐廳把最貴的 2000 元牛排放在菜單首位，800 元的排餐頓時顯得合理。對比之下，多數人選中間價位，正是店家高毛利區。",
+          "desc_en": "A restaurant lists the 2,000 steak first; the 800 cut suddenly feels reasonable. By contrast most pick the mid-price tier — exactly the high-margin zone the house wants."
+        },
+        {
+          "title_zh": "房屋帶看",
+          "title_en": "House Showings",
+          "desc_zh": "房仲先帶看一間裝潢差、價格高的「墊檔物件」，再帶看真正想賣的那間。相比之下後者條件超值，成交率大增。",
+          "desc_en": "An agent shows a shabby overpriced 'decoy' first, then the real target. By contrast the target looks like a great deal — closing rates jump."
+        },
+        {
+          "title_zh": "薪資談判",
+          "title_en": "Salary Negotiation",
+          "desc_zh": "先開一個偏高的數字，對方還價後的數字會落在比原先預期高的位置。先提出的「錨」會拉動整個談判區間。",
+          "desc_en": "Opening high anchors the whole negotiation; the counter lands higher than the other side originally planned. The first 'anchor' drags the entire range."
+        }
+      ]
+    },
+    {
+      "id": "decision-matrix",
+      "number": 11,
+      "category": "decision",
+      "name_zh": "決策矩陣",
+      "name_en": "Decision Matrix",
+      "definition_zh": "列出選項與多個評估準則，給每個準則設權重，再對各選項逐一評分加權，得出量化排名。把主觀直覺轉成可比較的結構。",
+      "definition_en": "List options and multiple criteria, weight each criterion, score every option, then sum weighted scores for a ranked result. Turns subjective intuition into comparable structure.",
+      "scenarios_zh": "多選方案評比、採購招標、選校選職。",
+      "scenarios_en": "Comparing multiple options, procurement bidding, choosing schools or jobs.",
+      "cases": [
+        {
+          "title_zh": "選擇 offer",
+          "title_en": "Choosing a Job Offer",
+          "desc_zh": "三個工作機會，以薪資（權重 0.4）、發展性（0.3）、通勤（0.2）、文化（0.1）評分加權。看似最賺的 offer 在發展性低分，加權後反而落敗。",
+          "desc_en": "Three offers scored on salary (0.4), growth (0.3), commute (0.2), culture (0.1). The highest-pay offer scores low on growth and, weighted, actually loses."
+        },
+        {
+          "title_zh": "軟體選型",
+          "title_en": "Software Selection",
+          "desc_zh": "企業評比五套系統，以價格、功能、擴充性、支援評分。矩陣化後發現最貴的那套總分最高，因為支援與擴充性遙遙領先。",
+          "desc_en": "A firm scores five systems on price, features, scalability, support. The matrix reveals the priciest scores highest overall, leading far on support and scalability."
+        },
+        {
+          "title_zh": "買車比拼",
+          "title_en": "Comparing Cars",
+          "desc_zh": "在油耗、安全、空間、價格間設權重，把候選車款逐一評分。原本憑感覺偏愛的車，在安全與油耗低分下被理性的黑馬超越。",
+          "desc_en": "Weighting fuel, safety, space, price and scoring each candidate, the emotionally favored car is overtaken by a rational dark horse that scores better on safety and fuel."
+        }
+      ]
+    },
+    {
+      "id": "pre-mortem",
+      "number": 12,
+      "category": "decision",
+      "name_zh": "事前驗屍",
+      "name_en": "Pre-Mortem",
+      "definition_zh": "在行動前先假設「這件事一年後徹底失敗了」，然後倒推最可能的失敗原因。提前找出地雷，比事後檢討更省成本。",
+      "definition_en": "Before acting, assume 'this totally failed a year later' and work backward to the most likely causes. Finding landmines early costs far less than post-mortems.",
+      "scenarios_zh": "重大專案啟動前、產品上市前、合資簽約前。",
+      "scenarios_en": "Before launching major projects, products, or joint ventures.",
+      "cases": [
+        {
+          "title_zh": "產品上市",
+          "title_en": "Product Launch",
+          "desc_zh": "上市前團隊設想「半年後產品無人問津」，倒推原因：定價過高、目標客群錯位、缺口碑通路。於是上市前先調整定價與找KOL，避開三個地雷。",
+          "desc_en": "Before launch the team imagines 'six months in, nobody cares' and traces causes: overpricing, wrong target, no口碑 channels. They adjust price and line up KOLs pre-launch, dodging three mines."
+        },
+        {
+          "title_zh": "合資談判",
+          "title_en": "Joint Venture",
+          "desc_zh": "簽約前假設「兩年後合資破局」，列出可能原因：決策權模糊、利潤分配不公、退出機制缺失。把這些寫進合約先防範。",
+          "desc_en": "Before signing, assume 'the JV collapses in two years' and list causes: vague decision rights, unfair profit split, no exit clause. These get written into the contract up front."
+        },
+        {
+          "title_zh": "大樓興建",
+          "title_en": "Building Construction",
+          "desc_zh": "開工前預想「完工延期半年且超支三成」，倒推：地基遇地下水、供料延遲、天候。預留緩衝預算與替代供料商，把風險提前吸收。",
+          "desc_en": "Before breaking ground, picture 'six months late and 30% over budget': groundwater, supply delays, weather. Buffer budget and backup suppliers absorb the risk early."
+        }
+      ]
+    },
+    {
+      "id": "eisenhower-matrix",
+      "number": 13,
+      "category": "decision",
+      "name_zh": "艾森豪矩陣",
+      "name_en": "Eisenhower Matrix",
+      "definition_zh": "以「重要／不重要」與「緊急／不緊急」兩軸把任務分成四象限：先做重要且緊急，排程重要不緊急，委外緊急不重要，刪除不緊急不重要。",
+      "definition_en": "Cross 'important/not' with 'urgent/not' into four quadrants: do important+urgent first, schedule important+not urgent, delegate urgent+not important, drop the rest.",
+      "scenarios_zh": "時間管理、任務排序、克服瞎忙。",
+      "scenarios_en": "Time management, task prioritization, overcoming busywork.",
+      "cases": [
+        {
+          "title_zh": "主管的一天",
+          "title_en": "A Manager's Day",
+          "desc_zh": "把全天雜事分進四象限後發現，八成時間花在「緊急不重要」的突發小事。把這些委派給部屬，騰出時間投入「重要不緊急」的策略規劃。",
+          "desc_en": "Sorting the day's tasks into quadrants reveals 80% of time goes to 'urgent not important' interruptions. Delegating them frees time for 'important not urgent' strategy."
+        },
+        {
+          "title_zh": "創業者取捨",
+          "title_en": "A Founder's Trade-offs",
+          "desc_zh": "創業者把回郵件、修小 bug 歸為緊急不重要，委外或批次處理；把找下一輪募資、找產品市場契合歸為重要不緊急，每日保護時段推進。",
+          "desc_en": "A founder bins email and minor bugs as urgent-not-important (delegated/batched) and fundraising and product-market fit as important-not-urgent, protected daily."
+        },
+        {
+          "title_zh": "學生備考",
+          "title_en": "Student Exam Prep",
+          "desc_zh": "考前把科目分成「重要且急（弱科＋近考）」「重要不急（強科打底）」「急不重要（社團雜務）」。前者每天 prioritise，後者刪減，效率倍增。",
+          "desc_en": "Before exams, subjects split into 'important+urgent (weak, soon)', 'important+not (strong, foundation)', 'urgent+not (club chores)'. Prioritizing the first and cutting the last doubles efficiency."
+        }
+      ]
+    },
+    {
+      "id": "first-principles",
+      "number": 14,
+      "category": "systems",
+      "name_zh": "第一性原理",
+      "name_en": "First Principles Thinking",
+      "definition_zh": "把問題拆解到最基本、不可再分的真理，再從這些基礎往上重建，而非用類比或既有做法推論。打破慣性，找到全新解。",
+      "definition_en": "Break a problem down to its most fundamental, indivisible truths, then rebuild upward — rather than reasoning by analogy or convention. Breaks inertia to find novel solutions.",
+      "scenarios_zh": "技術創新、成本革命、顛覆式創業。",
+      "scenarios_en": "Technical innovation, cost revolution, disruptive entrepreneurship.",
+      "cases": [
+        {
+          "title_zh": "火箭成本",
+          "title_en": "Rocket Cost",
+          "desc_zh": "太空運輸被視為天價，但拆到原料層：碳纖維、鈦、燃料的市價其實只佔售價的 2%。從原料自行組裝，把發射成本砍到原先的十分之一。",
+          "desc_en": "Space transport seemed astronomical in price, but at the raw-material level — carbon fiber, titanium, fuel — costs are just 2% of the sticker. Building from raw materials cut launch cost to a tenth."
+        },
+        {
+          "title_zh": "電池定價",
+          "title_en": "Battery Pricing",
+          "desc_zh": "電池被視為昂貴成品，拆解後發現鈷、鎳、鋁的原料成本遠低於成品。從材料端重設製程，每度電成本連年下降，促成電動車普及。",
+          "desc_en": "Batteries seemed expensive as finished goods, but cobalt, nickel, aluminum raw costs are far lower. Redesigning the process from materials cut per-kWh cost yearly, enabling EV adoption."
+        },
+        {
+          "title_zh": "餐飲創新",
+          "title_en": "Rethinking a Restaurant",
+          "desc_zh": "不問「如何開一家更好的餐廳」，而問「人為什麼要外出吃飯」這個第一性問題。答案可能是社交與體驗，於是誕生只做體驗、餐點外包的新型態空間。",
+          "desc_en": "Not 'how to open a better restaurant' but 'why do people dine out' — a first-principles question. The answer (socializing, experience) births venues that sell experience and outsource food."
+        }
+      ]
+    },
+    {
+      "id": "systems-thinking",
+      "number": 15,
+      "category": "systems",
+      "name_zh": "系統思考",
+      "name_en": "Systems Thinking",
+      "definition_zh": "不把事件視為孤立，而是看見要素之間的關聯、回饋與延遲。改動一處會牽動整體，唯有看全局才能找到真正的槓桿點。",
+      "definition_en": "Treat events not as isolated but as connected by relationships, feedback, and delays. Changing one point moves the whole; only the full view reveals true leverage points.",
+      "scenarios_zh": "組織變革、生態問題、流程優化。",
+      "scenarios_en": "Organizational change, ecological issues, process optimization.",
+      "cases": [
+        {
+          "title_zh": "除草劑與害蟲",
+          "title_en": "Herbicide and Pests",
+          "desc_zh": "噴藥殺了害蟲，也殺了害蟲的天敵，第二年害蟲爆發更嚴重。系統思考讓人看見「短期消滅」反而削弱系統自我調節，應改為恢復生態平衡。",
+          "desc_en": "Spraying kills pests but also their predators; the next year pests explode worse. Systems thinking shows 'short-term eradication' weakens self-regulation — restoring balance is the fix."
+        },
+        {
+          "title_zh": "醫院急診壅塞",
+          "title_en": "ER Overcrowding",
+          "desc_zh": "急診塞車直覺是「加急診床位」，但根因可能在出院流程卡關。系統思考指出疏通下游（出院）才能真正解上游（急診）的塞。",
+          "desc_en": "ER congestion tempts 'add ER beds', but the root may be a blocked discharge process. Systems thinking shows clearing the downstream (discharge) is what unblocks the upstream (ER)."
+        },
+        {
+          "title_zh": "公司加班文化",
+          "title_en": "Overtime Culture",
+          "desc_zh": "加班越多→疲勞→效率下降→更多加班，形成增強迴圈。只叫人「少加班」無效，要改的是專案排程與人力編制這個結構。",
+          "desc_en": "More overtime → fatigue → lower efficiency → more overtime: a reinforcing loop. Telling people 'work less' fails; the fix is the structure — scheduling and staffing."
+        }
+      ]
+    },
+    {
+      "id": "feedback-loops",
+      "number": 16,
+      "category": "systems",
+      "name_zh": "回饋迴圈",
+      "name_en": "Feedback Loops",
+      "definition_zh": "系統輸出回頭影響輸入，分「正回饋」（自我放大）與「負回饋」（自我修正）。辨識迴圈類型，才能預測系統會爆炸成長或趨於穩定。",
+      "definition_en": "A system's output loops back to its input, as 'positive feedback' (self-amplifying) or 'negative feedback' (self-correcting). Identifying the loop predicts explosion or stabilization.",
+      "scenarios_zh": "產品成長、社群經營、習慣養成。",
+      "scenarios_en": "Product growth, community building, habit formation.",
+      "cases": [
+        {
+          "title_zh": "社群網路成長",
+          "title_en": "Social Network Growth",
+          "desc_zh": "用戶越多→內容越多→吸引更多用戶，正回饋造成贏家通吃。理解這點，新平台會集中資源衝早期臨界質量，而非均勻撒資源。",
+          "desc_en": "More users → more content → more users: positive feedback creates winner-take-all. Knowing this, new platforms concentrate on early critical mass rather than spreading resources evenly."
+        },
+        {
+          "title_zh": "體重控制",
+          "title_en": "Weight Control",
+          "desc_zh": "運動→心情好→吃得健康→更有體力運動，是正向迴圈；反之暴食→愧疚→不運動→更胖，是負向增強。設計環境啟動正向迴圈是關鍵。",
+          "desc_en": "Exercise → better mood → healthier eating → more energy to exercise is a positive loop; bingeing → guilt → no exercise → heavier is a negative one. Designing environments that start the positive loop is key."
+        },
+        {
+          "title_zh": "恆溫器",
+          "title_en": "The Thermostat",
+          "desc_zh": "溫度低於設定值就加熱、達標就停，是典型負回饋，讓系統穩定在目標。企業預算控管、庫存補貨都靠類似的負回饋機制維持平衡。",
+          "desc_en": "Heat when below setpoint, stop when reached — classic negative feedback stabilizing the system. Budget control and inventory restocking rely on similar negative feedback to stay balanced."
+        }
+      ]
+    },
+    {
+      "id": "theory-of-constraints",
+      "number": 17,
+      "category": "systems",
+      "name_zh": "瓶頸理論",
+      "name_en": "Theory of Constraints",
+      "definition_zh": "任何系統的產出由最慢的環節（瓶頸）決定。優化非瓶頸環節只會堆積在製品，唯有找出並改善瓶頸，整體產出才會提升。",
+      "definition_en": "A system's output is set by its slowest link (the bottleneck). Optimizing non-bottlenecks only piles up work-in-process; only finding and improving the bottleneck lifts total output.",
+      "scenarios_zh": "生產線、流程改善、專案管理。",
+      "scenarios_en": "Production lines, process improvement, project management.",
+      "cases": [
+        {
+          "title_zh": "工廠產線",
+          "title_en": "Factory Line",
+          "desc_zh": "五道工序中第四道最慢，前面堆滿半成品、後面員工閒到打呵欠。把人力與投資集中改善第四道，整條線產出立刻上升，而非平均優化每站。",
+          "desc_en": "Among five steps the fourth is slowest; inventory piles before it and workers idle after it. Concentrating people and investment on step four lifts the whole line — not averaging improvement across all."
+        },
+        {
+          "title_zh": "餐廳出餐",
+          "title_en": "Restaurant Kitchen",
+          "desc_zh": "前場點餐很快，但烤爐只有一台，出餐卡在烤爐。再加服務生無濟於事，買第二台烤爐才真正提升翻桌率。",
+          "desc_en": "Orders come in fast but there's one grill — output is grill-bound. Adding waiters won't help; a second grill is what truly raises table turnover."
+        },
+        {
+          "title_zh": "軟體交付",
+          "title_en": "Software Delivery",
+          "desc_zh": "開發很快但測試環境只有一套，所有 PR 排隊等測試。瓶頸是測試環境，加開發人力只會堆更多待測 PR，擴充測試環境才有效。",
+          "desc_en": "Dev is fast but there's one test environment — all PRs queue for it. The bottleneck is testing capacity; adding devs just stacks more PRs waiting. Expanding test environments works."
+        }
+      ]
+    },
+    {
+      "id": "pareto-principle",
+      "number": 18,
+      "category": "systems",
+      "name_zh": "帕累托法則",
+      "name_en": "Pareto Principle (80/20)",
+      "definition_zh": "多數系統中，少數原因貢獻了大部分結果——常約 80% 的結果來自 20% 的投入。找出那關鍵少數，集中資源，報酬最高。",
+      "definition_en": "In most systems, a few causes drive most results — often ~80% of outcomes from 20% of inputs. Find the vital few, concentrate resources, returns are highest.",
+      "scenarios_zh": "客戶經營、產品功能、時間分配。",
+      "scenarios_en": "Customer management, product features, time allocation.",
+      "cases": [
+        {
+          "title_zh": "客戶營收",
+          "title_en": "Customer Revenue",
+          "desc_zh": "八成營收來自兩成大客戶。與其平均照顧所有客戶，把客服資源集中在頭部客戶，並為他們設計專屬方案，獲利與留存雙升。",
+          "desc_en": "80% of revenue comes from 20% of key clients. Rather than serving all equally, concentrating service on the top clients with tailored plans lifts both profit and retention."
+        },
+        {
+          "title_zh": "軟體 bug",
+          "title_en": "Software Bugs",
+          "desc_zh": "八成當機由兩成 bug 引起。集中火力修復出現頻率最高的幾個 bug，系統穩定度大幅提升，勝過逐一修所有小問題。",
+          "desc_en": "80% of crashes stem from 20% of bugs. Focusing on the most frequent ones raises stability far more than fixing every minor issue one by one."
+        },
+        {
+          "title_zh": "學習槓桿",
+          "title_en": "Learning Leverage",
+          "desc_zh": "英語日常溝通八成由兩千個高頻字組成。先掌握高頻字，能快速應付八成情境，勝過從 A 開始背一萬個低頻字。",
+          "desc_en": "80% of everyday English uses 2,000 high-frequency words. Mastering them first handles 80% of situations fast — better than memorizing 10,000 low-frequency words from A."
+        }
+      ]
+    },
+    {
+      "id": "critical-path",
+      "number": 19,
+      "category": "systems",
+      "name_zh": "關鍵路徑",
+      "name_en": "Critical Path",
+      "definition_zh": "專案中由相互依賴任務串成的最長鏈，決定了最短完工時間。要加速專案，只能壓縮關鍵路徑上的任務，加速其他任務無濟於事。",
+      "definition_en": "The longest chain of dependent tasks in a project sets the minimum completion time. To speed up, only compress tasks on the critical path — speeding others is useless.",
+      "scenarios_zh": "專案排程、工程建設、產品開發。",
+      "scenarios_en": "Project scheduling, engineering, product development.",
+      "cases": [
+        {
+          "title_zh": "蓋房子",
+          "title_en": "Building a House",
+          "desc_zh": "挖地基→結構→屋頂是關鍵路徑；同期可做的是門窗採購。提前買門窗不會讓房子更早完工，但加速結構工程可以。",
+          "desc_en": "Foundation → structure → roof is the critical path; door/window procurement runs in parallel. Buying doors early won't finish the house sooner, but speeding structure will."
+        },
+        {
+          "title_zh": " App 上線",
+          "title_en": "App Launch",
+          "desc_zh": "後端 API 完成才能接前端、才能測試、才能上架，這是關鍵路徑。設計師提早做完 UI 不影響上市日，給後端加人才會。",
+          "desc_en": "Backend API → frontend integration → testing → launch is the critical path. Designers finishing UI early doesn't move launch day; adding backend devs does."
+        },
+        {
+          "title_zh": "新藥審查",
+          "title_en": "Drug Approval",
+          "desc_zh": "臨床試驗是最長環節，行銷籌備可並行。把行銷準備做得再快也無法提早上市，縮短臨床期（如擴大試驗規模）才是關鍵。",
+          "desc_en": "Clinical trials are the longest step; marketing prep runs in parallel. Faster marketing doesn't bring launch sooner — shortening trials (e.g., larger sites) is the key."
+        }
+      ]
+    },
+    {
+      "id": "emergence",
+      "number": 20,
+      "category": "systems",
+      "name_zh": "湧現",
+      "name_en": "Emergence",
+      "definition_zh": "整體會展現出個別部分所沒有的新特性。水分子不濕，但大量水分子集合就「濕」。複雜行為來自簡單規則的互動，無法從單一部件預測。",
+      "definition_en": "The whole shows properties no individual part has. A water molecule isn't wet, but many together are 'wet'. Complex behavior arises from simple rules interacting — unpredictable from any single part.",
+      "scenarios_zh": "群眾行為、組織文化、AI 神經網路。",
+      "scenarios_en": "Crowd behavior, organizational culture, AI neural networks.",
+      "cases": [
+        {
+          "title_zh": "鳥群飛行",
+          "title_en": "Bird Flocking",
+          "desc_zh": "每隻鳥只遵循三條簡單規則（對齊、凝聚、避撞），沒有領袖指揮，卻形成千變萬化的群飛圖案。複雜秩序來自簡單互動。",
+          "desc_en": "Each bird follows three simple rules (align, cohere, avoid); with no leader, intricate flock patterns emerge. Complex order arises from simple interactions."
+        },
+        {
+          "title_zh": "城市交通",
+          "title_en": "City Traffic",
+          "desc_zh": "每個駕駛各自決策，沒人設計「塞車波」，卻湧現出回堵、走走停停等集體現象。這些現象無法從單一駕駛行為預測。",
+          "desc_en": "Each driver decides independently; no one designs 'traffic waves', yet jams and stop-and-go waves emerge collectively — unpredictable from any one driver's behavior."
+        },
+        {
+          "title_zh": "組織文化",
+          "title_en": "Organizational Culture",
+          "desc_zh": "公司沒有任何人「是文化本身」，但成員日復一日的互動湧現出獨特氛圍。換掉執行長不一定改變文化，因為它存在於互動結構中。",
+          "desc_en": "No single person 'is the culture', yet daily interactions among members emerge as a distinct vibe. Swapping the CEO may not change it — culture lives in the interaction structure."
+        }
+      ]
+    },
+    {
+      "id": "network-effects",
+      "number": 21,
+      "category": "systems",
+      "name_zh": "網路效應",
+      "name_en": "Network Effects",
+      "definition_zh": "產品或服務的價值隨使用者數量增加而提升。電話只有你一人用毫無價值，用戶越多越有用。網路效應是許多平台壟斷的根源。",
+      "definition_en": "A product's value rises as user count grows. A phone with only you on it is worthless; more users, more useful. Network effects underlie many platform monopolies.",
+      "scenarios_zh": "平台創業、市集設計、通訊產品。",
+      "scenarios_en": "Platform startups, marketplace design, communication products.",
+      "cases": [
+        {
+          "title_zh": "通訊軟體",
+          "title_en": "Messaging Apps",
+          "desc_zh": "當身邊九成朋友都用同一個通訊軟體，你不得不用，即使別的軟體功能更好。網路效應讓後進者即使產品更優也難以撼動。",
+          "desc_en": "When 90% of friends use one messenger, you must too — even if a rival has better features. Network effects let incumbents fend off superior latecomers."
+        },
+        {
+          "title_zh": "市集雙邊",
+          "title_en": "Two-Sided Marketplaces",
+          "desc_zh": "買家越多→賣家越多→買家更多，形成正迴圈。早期要先補貼吸引一方（如司機），跨越臨界質量後才會自我增長。",
+          "desc_en": "More buyers → more sellers → more buyers, a positive loop. Early on you subsidize one side (e.g., drivers); after critical mass it grows itself."
+        },
+        {
+          "title_zh": "作業系統生態",
+          "title_en": "OS Ecosystem",
+          "desc_zh": "使用者多→開發者多→應用多→使用者更多。這就是為何桌面作業系統長期由少數系統主導，應用生態形成的護城河極深。",
+          "desc_en": "More users → more devs → more apps → more users. This is why desktop OSes are long dominated by a few — the app ecosystem forms a deep moat."
+        }
+      ]
+    },
+    {
+      "id": "economies-of-scale",
+      "number": 22,
+      "category": "systems",
+      "name_zh": "規模經濟",
+      "name_en": "Economies of Scale",
+      "definition_zh": "隨產量增加，固定成本被分攤，單位成本下降。規模越大越有成本優勢，這也是為何大企業能把價格壓到小對手無法生存。",
+      "definition_en": "As output rises, fixed costs spread out and per-unit cost falls. Greater scale yields cost advantage — why large firms can price small rivals out of the market.",
+      "scenarios_zh": "製造業、零售擴張、定價競爭。",
+      "scenarios_en": "Manufacturing, retail expansion, pricing competition.",
+      "cases": [
+        {
+          "title_zh": "汽車製造",
+          "title_en": "Car Manufacturing",
+          "desc_zh": "開發一款車的模具成本數十億，賣十萬輛與賣一百萬輛分攤下來單車成本差距巨大。大廠因此能以更低價賣同級車，小廠難以競爭。",
+          "desc_en": "Developing a car's tooling costs billions; spreading it over 100k vs 1M units makes a huge per-car gap. Big makers sell comparable cars cheaper — small makers can't compete."
+        },
+        {
+          "title_zh": "量販零售",
+          "title_en": "Big-Box Retail",
+          "desc_zh": "大量採購讓進價更低，大型物流中心分攤運費，單品售價因此比小商店低。規模經濟是量販店碾壓雜貨店的武器。",
+          "desc_en": "Bulk buying lowers purchase price, big distribution centers spread freight costs, so per-item retail beats small shops. Scale economies are how big-box stores crush grocers."
+        },
+        {
+          "title_zh": "雲端服務",
+          "title_en": "Cloud Services",
+          "desc_zh": "興建資料中心固定成本極高，但服務百萬客戶後每戶分攤極低。大雲端商能持續降價，小服務商難以負擔初期投資而被淘汰。",
+          "desc_en": "Data centers are hugely expensive up front, but across millions of customers per-user cost is tiny. Big cloud providers keep cutting prices; small ones can't fund the build and fall away."
+        }
+      ]
+    },
+    {
+      "id": "diminishing-returns",
+      "number": 23,
+      "category": "systems",
+      "name_zh": "邊際報酬遞減",
+      "name_en": "Diminishing Returns",
+      "definition_zh": "在其他條件不變下，持續增加某一投入，邊際產出會越來越少。第二碗飯的滿足感不如第一碗，第十碗甚至反胃。",
+      "definition_en": "Holding other factors fixed, adding more of one input yields ever-smaller marginal output. The second bowl of rice is less satisfying than the first; the tenth is nauseating.",
+      "scenarios_zh": "施肥、學習、行銷投放、享樂。",
+      "scenarios_en": "Fertilizing, learning, ad spend, pleasure.",
+      "cases": [
+        {
+          "title_zh": "農田施肥",
+          "title_en": "Fertilizing a Field",
+          "desc_zh": "第一批肥料讓產量大增，第二批增量減半，到某個量後再加反而燒苗。最佳施量在邊際收益等於肥料成本處，而非「越多越好」。",
+          "desc_en": "The first batch of fertilizer boosts yield greatly, the second half as much, and beyond some point it burns the crop. Optimal amount is where marginal gain equals fertilizer cost — not 'more is better'."
+        },
+        {
+          "title_zh": "健身訓練",
+          "title_en": "Fitness Training",
+          "desc_zh": "新手每週練三次進步飛快，進階者練六次進步有限，過度訓練反而受傷退步。報酬遞減提醒：更聰明而非更多地練。",
+          "desc_en": "A beginner improves fast at three sessions a week; an advanced lifter gains little at six and risks injury from overtraining. Diminishing returns: train smarter, not just more."
+        },
+        {
+          "title_zh": "財富與快樂",
+          "title_en": "Wealth and Happiness",
+          "desc_zh": "收入從貧窮到小康帶來的快樂增幅巨大，從小康到富豪增幅卻很小。邊際快樂遞減說明：追求財富到一定程度後，其他事物更快樂。",
+          "desc_en": "Income gains from poor to comfortable boost happiness hugely; from comfortable to rich, far less. Marginal happiness diminishing: past a point, other things bring more joy than wealth."
+        }
+      ]
+    },
+    {
+      "id": "critical-mass",
+      "number": 24,
+      "category": "systems",
+      "name_zh": "臨界質量",
+      "name_en": "Critical Mass",
+      "definition_zh": "系統累積到某個門檻後，會從緩慢量變突然轉為質變——自我維持、加速擴張。達到臨界點前後的策略完全不同。",
+      "definition_en": "Once a system accumulates past a threshold, slow quantitative change suddenly becomes qualitative — self-sustaining and accelerating. Strategy before and after the tipping point differs entirely.",
+      "scenarios_zh": "產品普及、社會運動、技術擴散。",
+      "scenarios_en": "Product adoption, social movements, technology diffusion.",
+      "cases": [
+        {
+          "title_zh": "電動車普及",
+          "title_en": "EV Adoption",
+          "desc_zh": "充電站少時沒人買電動車，沒人買就沒人建充電站。當充電站密度跨過臨界點，購買量突然暴增，進入自我增長期。",
+          "desc_en": "Few chargers means few EVs; few EVs means few chargers. Once charger density crosses the tipping point, purchases surge and a self-sustaining phase begins."
+        },
+        {
+          "title_zh": "社群起飛",
+          "title_en": "Community Takeoff",
+          "desc_zh": "新論壇前一千名用戶最難熬，內容稀薄、留不住人。一旦活躍用戶跨過臨界量，發文回覆自我循環啟動，社群自然壯大。",
+          "desc_en": "A new forum's first 1,000 users are grueling — thin content, low retention. Once active users cross critical mass, the post-reply loop ignites and the community grows itself."
+        },
+        {
+          "title_zh": "傳染病",
+          "title_en": "Epidemic Threshold",
+          "desc_zh": "感染人數低於臨界值會自然消退，超過則指數爆發。公共衛生的核心就是讓有效傳染數壓在臨界點以下，例如疫苗接種率。",
+          "desc_en": "Below the threshold an outbreak fades; above it, exponential spread. Public health's core is keeping the effective reproduction number below the tipping point — e.g., via vaccination rates."
+        }
+      ]
+    },
+    {
+      "id": "path-dependence",
+      "number": 25,
+      "category": "systems",
+      "name_zh": "路徑依賴",
+      "name_en": "Path Dependence",
+      "definition_zh": "今天的選擇 heavily 受過去偶然選擇所限制，即便那選擇現在看來非最優。早期的小優勢會被鎖定放大，最終形成難以扭轉的格局。",
+      "definition_en": "Today's choices are heavily constrained by past accidental ones, even if those now look suboptimal. Early small advantages lock in and amplify, forming patterns hard to reverse.",
+      "scenarios_zh": "技術標準、制度演化、城市發展。",
+      "scenarios_en": "Technical standards, institutional evolution, urban development.",
+      "cases": [
+        {
+          "title_zh": "鍵盤排列",
+          "title_en": "QWERTY Keyboard",
+          "desc_zh": "QWERTY 早期為避免打字機卡鍵而設計，如今機械限制早不存在，卻因所有人已習慣而被鎖定。更高效的排列再難取代，這就是路徑依賴。",
+          "desc_en": "QWERTY was designed to prevent typewriter jams; the mechanical constraint is long gone, yet everyone's habit locks it in. More efficient layouts can't replace it — path dependence."
+        },
+        {
+          "title_zh": "鐵道軌距",
+          "title_en": "Railway Gauge",
+          "desc_zh": "現代鐵路軌距源自兩匹馬的臀寬。馬車寬度決定早期礦車軌距，再決定鐵路軌距，甚至影響太空梭固體火箭的尺寸。歷史選擇一路鎖定。",
+          "desc_en": "Modern rail gauge traces to two horses' hindquarters. Wagon width set early mine-cart gauge, which set railway gauge, even influencing space-shuttle solid rocket size. History locks in."
+        },
+        {
+          "title_zh": "城市發展",
+          "title_en": "Urban Development",
+          "desc_zh": "一條百年前順著河流開的路，決定了今天的街廓與商圈。即便地形已不關鍵，拆除重建成本太高，城市格局被早期路徑鎖定。",
+          "desc_en": "A road laid a century ago along a river shapes today's blocks and retail. Even with terrain no longer key, rebuilding costs lock the city into its early path."
+        }
+      ]
+    },
+    {
+      "id": "confirmation-bias",
+      "number": 26,
+      "category": "psychology",
+      "name_zh": "確認偏誤",
+      "name_en": "Confirmation Bias",
+      "definition_zh": "人傾向主動尋找、解讀、記住支持自己既有信念的資訊，並忽略或貶低反證。這是判斷失準最普遍的來源。",
+      "definition_en": "People tend to seek, interpret, and remember information that supports their existing beliefs, while ignoring or discounting counter-evidence. The most common source of flawed judgment.",
+      "scenarios_zh": "投資研究、政治立場、診斷判斷。",
+      "scenarios_en": "Investment research, political stance, diagnostic judgment.",
+      "cases": [
+        {
+          "title_zh": "買進後的研究",
+          "title_en": "Research After Buying",
+          "desc_zh": "買了某檔股票後，投資人只看利多新聞、刷掉利空，越看越有信心。下跌時仍不願停損，因為只蒐集了支撐信念的證據。",
+          "desc_en": "After buying a stock, an investor reads only bullish news and dismisses bearish signs, growing ever more confident. Even as it falls, they won't stop — they've gathered only supporting evidence."
+        },
+        {
+          "title_zh": "星座解讀",
+          "title_en": "Horoscope Reading",
+          "desc_zh": "相信星座的人會記住「準」的描述、忘記不準的，越信越準。其實冷讀術的模糊描述對誰都適用，是確認偏誤製造了準確幻覺。",
+          "desc_en": "Believers remember the 'accurate' horoscope traits and forget the misses — it seems ever more true. Cold-reading's vague descriptions fit anyone; confirmation bias manufactures the illusion of accuracy."
+        },
+        {
+          "title_zh": "Google 搜尋偏誤",
+          "title_en": "Search Query Bias",
+          "desc_zh": "想證明「某保健品有效」，搜尋時打「某保健品 好處」，結果全是正面。換成「某保健品 副作用」才看得到反面。提問方式決定了答案。",
+          "desc_en": "To 'prove' a supplement works, you search 'benefits of X' and see only positives. Searching 'X side effects' reveals the contrary. The question frames the answer."
+        }
+      ]
+    },
+    {
+      "id": "availability-bias",
+      "number": 27,
+      "category": "psychology",
+      "name_zh": "易得性偏誤",
+      "name_en": "Availability Bias",
+      "definition_zh": "人用「腦中容易想到的例子」來判斷事件發生率。越鮮明、越近期、越常被媒體報導的事，越被高估，而非依真實統計判斷。",
+      "definition_en": "People judge event frequency by how easily examples come to mind. The more vivid, recent, or media-covered, the more it's overestimated — rather than by real statistics.",
+      "scenarios_zh": "風險評估、保險購買、恐慌決策。",
+      "scenarios_en": "Risk assessment, insurance purchase, panic decisions.",
+      "cases": [
+        {
+          "title_zh": "空難恐懼",
+          "title_en": "Fear of Flying",
+          "desc_zh": "空難罕見卻被大幅報導，讓人高估其發生率而怕搭機；車禍天天發生卻少上頭條，反而被輕忽。實際上開車致死率遠高於搭機。",
+          "desc_en": "Plane crashes are rare yet heavily covered, so people overestimate them and fear flying; daily car crashes barely make headlines and are ignored. Driving is in fact far deadlier."
+        },
+        {
+          "title_zh": "創業成功率",
+          "title_en": "Startup Success Rate",
+          "desc_zh": "媒體只報獨角獸，讓人誤以為創業很容易成功。實際上九成新創失敗，但失敗案例不會上版面，易得性偏誤扭曲了創業者的預期。",
+          "desc_en": "Media covers only unicorns, making entrepreneurship seem easy. In reality 90% of startups fail, but failures don't get headlines — availability bias distorts founders' expectations."
+        },
+        {
+          "title_zh": " word of mouth 行銷",
+          "title_en": "Word-of-Mouth Marketing",
+          "desc_zh": "消費者買什麼常取決於「最近聽誰提過」。一個刷屏的負評會讓銷量暴跌，即便萬名滿意顧客沒發聲。易得性決定了印象。",
+          "desc_en": "What consumers buy often hinges on 'who mentioned it lately'. one viral bad review can crash sales even when ten thousand happy customers stay silent. Availability shapes impression."
+        }
+      ]
+    },
+    {
+      "id": "anchoring",
+      "number": 28,
+      "category": "psychology",
+      "name_zh": "錨定效應",
+      "name_en": "Anchoring Effect",
+      "definition_zh": "人在做數量判斷時，會過度依賴最先接觸的數字（錨），即使它毫不相關。後續調整都不夠遠離這個錨，導致系統性偏差。",
+      "definition_en": "When estimating quantities, people over-rely on the first number (the anchor) they encounter, even if irrelevant. Subsequent adjustments stay too close, causing systematic bias.",
+      "scenarios_zh": "定價、談判、估價。",
+      "scenarios_en": "Pricing, negotiation, valuation.",
+      "cases": [
+        {
+          "title_zh": "折扣標價",
+          "title_en": "Discount Tags",
+          "desc_zh": "「原價 5000，特價 2000」讓人覺得賺到 3000；其實商品從未以 5000 賣過，5000 只是錨。沒有錨的單純 2000 元標價吸引力大減。",
+          "desc_en": "'Was 5,000, now 2,000' feels like saving 3,000; the item was never sold at 5,000 — it's just an anchor. A plain 2,000 tag with no anchor is far less compelling."
+        },
+        {
+          "title_zh": "薪資錨定",
+          "title_en": "Salary Anchoring",
+          "desc_zh": "你目前薪水成為下次求職的錨，新 offer 即使高出 30% 仍覺得不夠，因為你從舊錨往上調。其實市場行情才是真正的參考。",
+          "desc_en": "Your current salary becomes the anchor for the next job; even a 30% higher offer feels insufficient because you adjust up from the old anchor. Market rates are the real reference."
+        },
+        {
+          "title_zh": "隨機數實驗",
+          "title_en": "Random-Number Anchoring",
+          "desc_zh": "被問「某城市人口是否大於隨機抽出的 20 萬」後再估人口，被問到 20 萬的人估得遠低於被問到 200 萬的人——完全無關的數字仍影響判斷。",
+          "desc_en": "Asked 'is a city larger than a random 200k' before estimating its population, the 200k group estimates far lower than a 2M group — a totally irrelevant number still sways judgment."
+        }
+      ]
+    },
+    {
+      "id": "framing",
+      "number": 29,
+      "category": "psychology",
+      "name_zh": "框架效應",
+      "name_en": "Framing Effect",
+      "definition_zh": "同一件事用不同方式描述，會引出不同決策。「存活率 90%」與「死亡率 10%」內容相同，前者讓人安心、後者讓人恐慌。",
+      "definition_en": "The same fact described differently yields different decisions. '90% survival' and '10% mortality' are identical, yet the first reassures and the second alarms.",
+      "scenarios_zh": "醫療溝通、行銷文案、政策倡議。",
+      "scenarios_en": "Medical communication, marketing copy, policy advocacy.",
+      "cases": [
+        {
+          "title_zh": "手術說明",
+          "title_en": "Surgery Explanation",
+          "desc_zh": "醫師說「九成患者術後活過五年」比說「一成患者在五年內死亡」更容易讓病人接受手術。同樣數據，框架決定了情緒與選擇。",
+          "desc_en": "A surgeon saying '90% live beyond five years' wins patient consent more than '10% die within five years'. Same data, the frame dictates emotion and choice."
+        },
+        {
+          "title_zh": "牛肉標示",
+          "title_en": "Beef Labeling",
+          "desc_zh": "標示「75% 瘦肉」的牛肉比「25% 肥肉」賣得好得多，儘管完全相同。正向框架吸引購買，負向框架引人卻步。",
+          "desc_en": "Beef labeled '75% lean' outsells '25% fat' though identical. Positive frames attract buyers; negative ones repel them."
+        },
+        {
+          "title_zh": "罰款 vs 折扣",
+          "title_en": "Penalty vs Discount Framing",
+          "desc_zh": "「準時繳費折扣 200」與「逾期加收 200」金額相同，但後者促使繳費率高出許多。人對「損失」的敏感度高於「獲得」，框架可善用此性。",
+          "desc_en": "'Pay early, save 200' and 'pay late, pay 200 more' are equal, yet the latter drives much higher on-time payment. People are more loss-sensitive than gain-sensitive — framing exploits this."
+        }
+      ]
+    },
+    {
+      "id": "loss-aversion",
+      "number": 30,
+      "category": "psychology",
+      "name_zh": "損失趨避",
+      "name_en": "Loss Aversion",
+      "definition_zh": "失去某物的痛苦，約是獲得等值事物快樂的兩倍。這讓人過度保守、死抱虧損、拒絕合理風險，因為「不想認賠」的心理太強。",
+      "definition_en": "The pain of losing is about twice the pleasure of gaining the same. This makes people overly conservative, hold losers, and reject reasonable risk — 'not wanting to realize a loss' is too strong.",
+      "scenarios_zh": "投資行為、定價試用、談判。",
+      "scenarios_en": "Investment behavior, pricing trials, negotiation.",
+      "cases": [
+        {
+          "title_zh": "免費試用陷阱",
+          "title_en": "Free-Trial Trap",
+          "desc_zh": "給你一個月免費試用後，要「主動取消」才不扣款。一旦習慣了，取消就變成「失去」，多數人因損失趨避而繼續付費。",
+          "desc_en": "A one-month free trial requires you to actively cancel. Once you're used to it, canceling feels like 'losing' — loss aversion keeps most people paying."
+        },
+        {
+          "title_zh": "不願認賠",
+          "title_en": "Refusing to Sell at a Loss",
+          "desc_zh": "股票跌三成，賣掉就「實現」虧損，痛苦加倍；不賣則可幻想「會漲回來」。損失趨避讓投資人死抱爛股、錯失把資金轉到更好標的的機會。",
+          "desc_en": "A stock down 30%: selling 'realizes' the loss, doubling the pain; holding preserves the fantasy it'll rebound. Loss aversion makes investors cling to bad stocks and miss reallocating."
+        },
+        {
+          "title_zh": "退貨政策",
+          "title_en": "Return Policies",
+          "desc_zh": "「30 天無條件退貨」讓人放心買，但拿到商品後退貨變成「失去」，實際退貨率遠低於預期。商家善用損失趨避衝高銷量。",
+          "desc_en": "'30-day free returns' makes buying feel safe, but once you own it, returning feels like 'losing' — actual return rates run far below expected. Merchants exploit loss aversion to boost sales."
+        }
+      ]
+    },
+    {
+      "id": "hindsight-bias",
+      "number": 31,
+      "category": "psychology",
+      "name_zh": "後見之明偏誤",
+      "name_en": "Hindsight Bias",
+      "definition_zh": "事件發生後，人會覺得「我早就知道會這樣」，誤以為結果當時顯而易見。這讓我們高估自己的預測力、低估決策時的真實不確定性。",
+      "definition_en": "After an outcome, people feel 'I knew it all along', mistaking the result as having been obvious. This inflates perceived predictive power and understates the real uncertainty at decision time.",
+      "scenarios_zh": "事故檢討、投資回顧、歷史評論。",
+      "scenarios_en": "Post-accident review, investment post-mortems, historical commentary.",
+      "cases": [
+        {
+          "title_zh": "股市泡沫",
+          "title_en": "Market Bubbles",
+          "desc_zh": "泡沫破裂後人人宣稱「當時一看就知道太瘋」，但在泡沫內部時多數人仍追高。後見之明讓我們錯誤相信自己下個泡沫能看穿。",
+          "desc_en": "After a bubble bursts everyone claims 'it was obviously crazy', yet most chased it on the way up. Hindsight bias falsely convinces us we'll see the next bubble coming."
+        },
+        {
+          "title_zh": "事故問責",
+          "title_en": "Accident Blame",
+          "desc_zh": "災難後調查委員常說「這些警訊很明顯」，但在事發當下資訊混雜、警訊與雜訊並存。後見之明讓問責過於嚴苛，忽略當時的判斷難度。",
+          "desc_en": "After a disaster, commissions say 'the warning signs were obvious', but at the time signals were mixed with noise. Hindsight makes blame too harsh, ignoring how hard the call was in the moment."
+        },
+        {
+          "title_zh": "創業回顧",
+          "title_en": "Startup Retrospectives",
+          "desc_zh": "成功創業家的故事被講成「他當年就看準趨勢」，淡化了一路的試錯與運氣。讀者學到錯誤教訓：以為成功可精準預測。",
+          "desc_en": "A founder's story is told as 'they saw the trend from the start', smoothing over trial, error, and luck. Readers learn the wrong lesson: that success can be precisely predicted."
+        }
+      ]
+    },
+    {
+      "id": "survivorship-bias",
+      "number": 32,
+      "category": "psychology",
+      "name_zh": "倖存者偏差",
+      "name_en": "Survivorship Bias",
+      "definition_zh": "我們只看到通過某種篩選而「倖存」的樣本，忽略了被淘汰的多數，因而得出錯誤結論。看不見的失敗者藏著關鍵教訓。",
+      "definition_en": "We see only the samples that 'survived' some filter, ignoring the eliminated majority, and draw wrong conclusions. The invisible failures hold the key lessons.",
+      "scenarios_zh": "成功學研究、歷史分析、績效評估。",
+      "scenarios_en": "Success studies, historical analysis, performance evaluation.",
+      "cases": [
+        {
+          "title_zh": "二戰戰機裝甲",
+          "title_en": "WWII Bomber Armor",
+          "desc_zh": "軍方想在被擊中較多的機身部位加固，統計學家指出：能返航的飛機恰恰證明那些部位中彈也無妨，該加固的是返航飛機上沒有彈孔的部位。",
+          "desc_en": "The military wanted to armor where returning planes had the most holes; a statistician pointed out those spots prove a hit there is survivable — armor the spots with no holes on returnees."
+        },
+        {
+          "title_zh": "退學創業神話",
+          "title_en": "The Dropout-Founder Myth",
+          "desc_zh": "媒體追捧比爾蓋茲、佐克伯退學成功，卻不報導千千萬萬退學後失敗的人。倖存者偏差讓退學看起來是成功捷徑，其實倖存者極少數。",
+          "desc_en": "Media celebrates Gates and Zuckerberg dropping out, ignoring countless dropouts who failed. Survivorship bias makes dropping out look like a success shortcut — survivors are a tiny few."
+        },
+        {
+          "title_zh": "基金績效",
+          "title_en": "Fund Performance",
+          "desc_zh": "只看現存基金的歷史績效會高估整體水準，因為表現差的基金早已清算消失。把清算的基金也算進去，主動基金平均難以勝過指數。",
+          "desc_en": "Looking only at existing funds' history overstates the field, because poor funds were liquidated and vanished. Counting the dead ones, active funds struggle to beat the index on average."
+        }
+      ]
+    },
+    {
+      "id": "dunning-kruger",
+      "number": 33,
+      "category": "psychology",
+      "name_zh": "達克效應",
+      "name_en": "Dunning-Kruger Effect",
+      "definition_zh": "能力越低的人，越傾向高估自己的能力，因為他們缺乏辨識自身不足的後設能力。能力高者反而常低估自己，以為別人也會。",
+      "definition_en": "The less competent people are, the more they overestimate themselves — they lack the meta-skill to recognize their own inadequacy. The competent often underestimate themselves, assuming others find it easy too.",
+      "scenarios_zh": "新手自信、跨領域發言、自我評估。",
+      "scenarios_en": "Beginner overconfidence, cross-field pronouncements, self-assessment.",
+      "cases": [
+        {
+          "title_zh": "新手駕駛",
+          "title_en": "New Drivers",
+          "desc_zh": "剛拿到駕照的人常自評駕駛技術高於平均，因為他們還不知道自己不知道什麼。真正老練的駕駛反而更謹慎、更清楚自己的極限。",
+          "desc_en": "New license-holders often rate themselves above-average drivers, because they don't yet know what they don't know. Veteran drivers are more cautious and aware of their limits."
+        },
+        {
+          "title_zh": "鍵盤專家",
+          "title_en": "Armchair Experts",
+          "desc_zh": "對某領域只懂皮毛的人，在網路上發言最篤定。深入研究者反而常說「這問題很複雜、我不確定」。自信與能力呈倒 U 關係。",
+          "desc_en": "Those with surface knowledge post the most confident opinions online; deep researchers often say 'it's complicated, I'm not sure'. Confidence and skill form an inverted-U."
+        },
+        {
+          "title_zh": "考試自評",
+          "title_en": "Exam Self-Assessment",
+          "desc_zh": "考後分數最低的學生往往預估自己考得不錯，分數最高的反而低估。因為要正確判斷自己答得好不好，本身就需要相當的學科能力。",
+          "desc_en": "After an exam, the lowest scorers predict they did fine; the highest scorers underestimate. Judging whether you answered well itself requires subject mastery."
+        }
+      ]
+    },
+    {
+      "id": "fundamental-attribution-error",
+      "number": 34,
+      "category": "psychology",
+      "name_zh": "基本歸因謬誤",
+      "name_en": "Fundamental Attribution Error",
+      "definition_zh": "解釋他人行為時，我們過度歸因於其性格，卻低估情境因素；對自己則相反——歸咎於情境。同一行為，兩套標準。",
+      "definition_en": "When explaining others' behavior, we over-attribute to character and underweight the situation; for ourselves we do the reverse — blaming the situation. Same act, two standards.",
+      "scenarios_zh": "人際評價、團隊衝突、績效考核。",
+      "scenarios_en": "Interpersonal judgments, team conflict, performance reviews.",
+      "cases": [
+        {
+          "title_zh": "插隊的路人",
+          "title_en": "The Queue Jumper",
+          "desc_zh": "看到別人插隊，直覺認為「這人沒教養」；自己插隊時卻想「我趕時間、情有可原」。我們對人嚴、對己寬，正是基本歸因謬誤。",
+          "desc_en": "Seeing someone cut a line, you think 'no manners'; cutting it yourself, you think 'I'm in a hurry, understandable'. Harsh on others, lenient on ourselves — the fundamental attribution error."
+        },
+        {
+          "title_zh": "同事犯錯",
+          "title_en": "A Colleague's Mistake",
+          "desc_zh": "部屬漏報告，主管認定他「不細心」；自己漏報告則是「被太多事分心」。歸因差異造成不公考核，也讓團隊難以對事不對人。",
+          "desc_en": "A subordinate misses a report and the manager deems them 'careless'; the manager misses one and it's 'too many distractions'. The attribution gap breeds unfair reviews and blocks objective discussion."
+        },
+        {
+          "title_zh": "路怒症",
+          "title_en": "Road Rage",
+          "desc_zh": "別人亂切車道就是「三寶駕駛」，自己切車道是「沒看到來車」。把他人行為歸於性格、自己歸於情境，是路上怒氣的常見來源。",
+          "desc_en": "Someone else swerves and they're a 'terrible driver'; you swerve and 'didn't see the car'. Attributing others to character and yourself to situation fuels road rage."
+        }
+      ]
+    },
+    {
+      "id": "halo-effect",
+      "number": 35,
+      "category": "psychology",
+      "name_zh": "月暈效應",
+      "name_en": "Halo Effect",
+      "definition_zh": "對某人在某一面向的印象（如外貌、名氣），會暈染到對他其他面向的判斷。長相好看的人常被假設更聰明、更可靠。",
+      "definition_en": "An impression of someone on one dimension (looks, fame) bleeds into judgments of other dimensions. Attractive people are often assumed smarter and more trustworthy.",
+      "scenarios_zh": "面試招聘、名人代言、產品評價。",
+      "scenarios_en": "Hiring interviews, celebrity endorsement, product evaluation.",
+      "cases": [
+        {
+          "title_zh": "面試外貌",
+          "title_en": "Interview Looks",
+          "desc_zh": "面試官對儀表出眾的候選人，傾向連帶評高其專業能力與團隊合作，即使這些與外貌無關。月暈效應讓招聘決策潛藏偏差。",
+          "desc_en": "Interviewers tend to also rate a polished-looking candidate higher on expertise and teamwork, though these are unrelated to looks. The halo effect biases hiring decisions."
+        },
+        {
+          "title_zh": "名人代言",
+          "title_en": "Celebrity Endorsement",
+          "desc_zh": "受歡迎的明星代言某保養品，消費者會連帶相信產品有效，即使明星並非保養專家。光環從人轉移到產品。",
+          "desc_en": "A beloved celebrity endorses a skincare line and consumers come to believe the product works, though the star is no skincare expert. The halo transfers from person to product."
+        },
+        {
+          "title_zh": "名校光環",
+          "title_en": "Elite-School Halo",
+          "desc_zh": "頂尖名校畢業生在面試中被預設為能力強，即使表現普通也獲得較多包容。光環讓人忽略實際表現，造成用人失準。",
+          "desc_en": "An elite-school grad is presumed competent in interviews and given more leeway even when performance is mediocre. The halo obscures actual performance and misguides hiring."
+        }
+      ]
+    },
+    {
+      "id": "bandwagon-effect",
+      "number": 36,
+      "category": "psychology",
+      "name_zh": "羊群效應",
+      "name_en": "Bandwagon Effect",
+      "definition_zh": "人傾向相信或做「多數人正在相信或做的事」，因為跟隨群眾既省思辨成本又降低被孤立風險。但群眾未必對，且可能集體犯錯。",
+      "definition_en": "People tend to believe or do what 'most others are believing or doing' — following the crowd saves thinking cost and reduces isolation risk. But the crowd isn't necessarily right and can be collectively wrong.",
+      "scenarios_zh": "投資追漲、流行消費、會議決策。",
+      "scenarios_en": "Chasing investment rallies, trend consumption, meeting decisions.",
+      "cases": [
+        {
+          "title_zh": "排隊名店",
+          "title_en": "Queuing for a Trendy Shop",
+          "desc_zh": "看到長排人龍就認為「一定很好吃」而加入隊伍，即使沒有任何品質資訊。店家也會僱人排隊製造羊群效應，吸引真正的客人。",
+          "desc_en": "Seeing a long line you assume 'it must be great' and join, with zero quality info. Shops even hire line-standers to manufacture the bandwagon effect and lure real customers."
+        },
+        {
+          "title_zh": "會議一言堂",
+          "title_en": "Meeting Groupthink",
+          "desc_zh": "前兩位發言者都贊成某方案，後面的人即使有異議也傾向附和。羊群效應讓會議走向多數意見，扼殺關鍵的反對聲音。",
+          "desc_en": "When the first two speakers back a plan, later dissenters tend to conform. The bandwagon effect steers meetings toward the majority and silences key objections."
+        },
+        {
+          "title_zh": "股市追漲殺跌",
+          "title_en": "Chasing the Rally",
+          "desc_zh": "看到親友都買某檔飆股就跟著買，因為「大家都在賺」。等散戶全部湧入時往往是高點，羊群效應讓散戶成為最後接盤的人。",
+          "desc_en": "Seeing friends all buy a soaring stock, you join because 'everyone's making money'. By the time retail floods in, it's often the peak — the bandwagon leaves retail holding the bag."
+        }
+      ]
+    },
+    {
+      "id": "recency-bias",
+      "number": 37,
+      "category": "psychology",
+      "name_zh": "近因偏誤",
+      "name_en": "Recency Bias",
+      "definition_zh": "人過度看重最近發生的事，當作未來的常態，而忽略長期趨勢與歷史平均。最近的暴漲或暴跌會被誤認為會無限延續。",
+      "definition_en": "People overweight recent events as the new normal, ignoring long-term trends and historical averages. A recent surge or crash is mistaken as lasting indefinitely.",
+      "scenarios_zh": "績效評估、市場預測、人際印象。",
+      "scenarios_en": "Performance reviews, market forecasting, interpersonal impressions.",
+      "cases": [
+        {
+          "title_zh": "績效考核",
+          "title_en": "Performance Reviews",
+          "desc_zh": "年底打考績時，主管記得最清楚的是最近三個月的表現，前九個月的優異表現被淡忘。近因偏誤讓年底衝刺的人佔便宜、上半年努力者吃虧。",
+          "desc_en": "At year-end review a manager remembers the last three months clearly while nine earlier strong months fade. Recency bias rewards the year-end sprinter and penalizes the early performer."
+        },
+        {
+          "title_zh": "股市預測",
+          "title_en": "Market Forecasting",
+          "desc_zh": "股市連漲半年後，投資人開始預期「會一直漲」而加碼；連跌半年則覺得「會一直跌」而殺出。近因被當成永遠，是散戶追高殺低的根源。",
+          "desc_en": "After six rising months investors expect 'it'll keep rising' and pile in; after six falling months they feel 'it'll keep falling' and sell. Mistaking the recent for the eternal drives retail's buy-high-sell-low."
+        },
+        {
+          "title_zh": "印象更新",
+          "title_en": "Impression Updating",
+          "desc_zh": "長期可靠的同事最近犯一次大錯，你會忽然覺得他「變不可靠了」，忽略過去幾年的穩定。近因偏誤讓單一事件覆蓋長期累積的評價。",
+          "desc_en": "A long-reliable colleague makes one big recent mistake and suddenly seems 'unreliable now', ignoring years of steadiness. Recency bias lets a single event overwrite a long-accumulated reputation."
+        }
+      ]
+    },
+    {
+      "id": "status-quo-bias",
+      "number": 38,
+      "category": "psychology",
+      "name_zh": "現狀偏誤",
+      "name_en": "Status Quo Bias",
+      "definition_zh": "人傾向維持現狀、抗拒改變，即使改變的預期效益更大。改變被視為一種「損失」，而不改則感覺「沒做錯什麼」，於是停滯不前。",
+      "definition_en": "People prefer the status quo and resist change even when changing has higher expected benefit. Change feels like a 'loss' while not changing feels like 'doing nothing wrong' — so inertia wins.",
+      "scenarios_zh": "預設選項、轉職換屋、政策改革。",
+      "scenarios_en": "Default options, changing jobs or homes, policy reform.",
+      "cases": [
+        {
+          "title_zh": "預設值的力量",
+          "title_en": "The Power of Defaults",
+          "desc_zh": "器官捐贈同意書預設勾選「同意」的國家，捐贈率遠高於預設「不同意」的國家。多數人不改預設，現狀偏誤讓預設值成為強大政策工具。",
+          "desc_en": "Countries defaulting organ donation to 'yes' have far higher donation rates than those defaulting to 'no'. Most never change the default; status quo bias makes defaults a powerful policy lever."
+        },
+        {
+          "title_zh": "捨不得換銀行",
+          "title_en": "Sticky Bank Accounts",
+          "desc_zh": "明知別家銀行手續費更低、利率更好，卻因「習慣了、換了麻煩」而多年不換。現狀偏誤讓小小的切換成本放大成不動的理由。",
+          "desc_en": "Knowing another bank charges less and pays more interest, you stay for years because 'I'm used to it, switching is a hassle'. Status quo bias inflates tiny switching costs into reasons to stay."
+        },
+        {
+          "title_zh": "企業不轉型",
+          "title_en": "Firms That Won't Pivot",
+          "desc_zh": "傳統企業明明看到數位趨勢，卻因現有業務還賺錢而不願轉型，等到獲利崩塌才被迫改變，往往為時已晚。現狀偏誤是組織惰性的核心。",
+          "desc_en": "A legacy firm sees the digital trend clearly but won't pivot while the old business still earns; by the time profit collapses, change comes too late. Status quo bias is the core of organizational inertia."
+        }
+      ]
+    },
+    {
+      "id": "bias-blind-spot",
+      "number": 39,
+      "category": "psychology",
+      "name_zh": "偏見盲點",
+      "name_en": "Bias Blind Spot",
+      "definition_zh": "人能辨認出別人受到認知偏誤的影響，卻認為自己客觀中立、不受偏誤干擾。這讓我們拒絕採用防範偏誤的機制，反而更易犯錯。",
+      "definition_en": "People recognize cognitive biases in others yet believe themselves objective and unaffected. This leads us to reject debiasing mechanisms — and so err more easily.",
+      "scenarios_zh": "招募決策、自我反省、辯論。",
+      "scenarios_en": "Hiring decisions, self-reflection, debate.",
+      "cases": [
+        {
+          "title_zh": "我沒有偏見",
+          "title_en": "'I'm Not Biased'",
+          "desc_zh": "面試官讀過確認偏誤的文章、能點出別人的盲點，卻堅信自己的直覺招聘「很準」。正因自認免疫，他從不採用結構化面試來防範偏誤。",
+          "desc_en": "An interviewer reads about confirmation bias, spots it in others, yet insists their gut hires are 'spot on'. Believing themselves immune, they never adopt structured interviews to debias."
+        },
+        {
+          "title_zh": "投資人自信",
+          "title_en": "Confident Investors",
+          "desc_zh": "投資人笑別人追高殺跌，自己卻在暴跌時一樣恐慌殺出。偏見盲點讓人覺得「我是理性的、他們不是」，於是不設停損紀律。",
+          "desc_en": "Investors mock others for chasing highs and selling lows, yet panic-sell in crashes themselves. The bias blind spot — 'I'm rational, they're not' — keeps them from setting stop-loss discipline."
+        },
+        {
+          "title_zh": "辯論中的雙標",
+          "title_en": "Double Standards in Debate",
+          "desc_zh": "辯論時，你認為對方被意識形態蒙蔽、自己卻是依證據。偏見盲點讓雙方都認為「只有對方有偏見」，使理性對話幾乎不可能。",
+          "desc_en": "In a debate you believe the other side is blinded by ideology while you follow evidence. The bias blind spot — 'only they are biased' — makes rational dialogue nearly impossible."
+        }
+      ]
+    },
+    {
+      "id": "curse-of-knowledge",
+      "number": 40,
+      "category": "psychology",
+      "name_zh": "知識詛咒",
+      "name_en": "Curse of Knowledge",
+      "definition_zh": "一旦你知道某件事，就很難想像「不知道它」是什麼感覺。專家常用行話對新手溝通，卻忘了對方聽不懂，因為他無法回到無知的狀態。",
+      "definition_en": "Once you know something, it's hard to imagine not knowing it. Experts communicate with jargon to novices, forgetting they can't follow — unable to return to a state of ignorance.",
+      "scenarios_zh": "教學、產品說明、跨部門溝通。",
+      "scenarios_en": "Teaching, product explanation, cross-functional communication.",
+      "cases": [
+        {
+          "title_zh": "專家對新手",
+          "title_en": "Expert to Novice",
+          "desc_zh": "工程師對業務解釋產品，滿口 API、SDK、latency，業務聽得一頭霧水。專家忘了當年自己也聽不懂這些詞，這就是知識詛咒。",
+          "desc_en": "An engineer explains a product to sales in API, SDK, latency jargon — sales is lost. The expert forgets they once didn't understand those words either: the curse of knowledge."
+        },
+        {
+          "title_zh": "使用說明書",
+          "title_en": "User Manuals",
+          "desc_zh": "產品手冊由工程師撰寫，預設讀者已懂基本設定，導致新手卡在第一步。設計師若能「假裝自己第一次用」，手冊會平易近人得多。",
+          "desc_en": "Manuals written by engineers assume the reader knows the basics, so newbies stall at step one. If designers 'pretended it's their first time', manuals would be far more approachable."
+        },
+        {
+          "title_zh": "敲節拍實驗",
+          "title_en": "The Tapping Experiment",
+          "desc_zh": "實驗中敲歌者預測聽者能猜出五成歌曲，實際只有 2.5%。敲的人腦中響著旋律，無法體會聽者只聽到斷續節拍的感受——知識詛咒的經典。",
+          "desc_en": "In an experiment tappers predicted listeners would guess 50% of songs; actual was 2.5%. Tappers hear the melody in their head and can't feel the listener's bare taps — a classic curse of knowledge."
+        }
+      ]
+    },
+    {
+      "id": "supply-and-demand",
+      "number": 41,
+      "category": "economics",
+      "name_zh": "供需法則",
+      "name_en": "Supply and Demand",
+      "definition_zh": "價格由供給與需求的交會點決定。需求增加或供給減少使價格上升，反之則下降。這是理解絕大多數市場變動的基礎工具。",
+      "definition_en": "Price is set where supply meets demand. Rising demand or falling supply raises price; the reverse lowers it. The foundational tool for understanding most market movements.",
+      "scenarios_zh": "定價、市場分析、庫存管理。",
+      "scenarios_en": "Pricing, market analysis, inventory management.",
+      "cases": [
+        {
+          "title_zh": "口罩之亂",
+          "title_en": "Mask Shortages",
+          "desc_zh": "疫情爆發時需求暴增、供給未及跟上，口罩價格飆漲。隨產能擴充（供給增加）與需求降溫，價格回落。供需法則解釋了整個價格曲線。",
+          "desc_en": "At pandemic onset demand surged and supply lagged, so mask prices spiked. As capacity grew (supply up) and demand cooled, prices fell. Supply and demand trace the whole price curve."
+        },
+        {
+          "title_zh": "黃金地段租金",
+          "title_en": "Prime-Location Rent",
+          "desc_zh": "市中心店面供給有限（就那些地段）、需求者眾多（人潮大），租金自然居高。郊區供給多、需求少，租金低。供需決定了地段價值。",
+          "desc_en": "Downtown retail space is limited (few plots) with many bidders (heavy foot traffic), so rent stays high. Suburbs: more supply, less demand, lower rent. Supply and demand set location value."
+        },
+        {
+          "title_zh": "演唱會黃牛票",
+          "title_en": "Concert Scalping",
+          "desc_zh": "熱門演唱會票券定價低於市場均衡，需求遠超供給，於是黃牛以高價收購轉售，價格逼近真實供需均衡點。官方定價與市場價的落差就是套利空間。",
+          "desc_en": "Hot concerts are priced below market equilibrium, demand far exceeding supply, so scalpers resell near the true equilibrium. The gap between official price and market price is the arbitrage space."
+        }
+      ]
+    },
+    {
+      "id": "comparative-advantage",
+      "number": 42,
+      "category": "economics",
+      "name_zh": "比較利益",
+      "name_en": "Comparative Advantage",
+      "definition_zh": "即使你在每件事上都比對方強，雙方仍應各自專注於「相對成本最低」的項目再交換，總產出最大。關鍵是機會成本的比較，而非絕對能力。",
+      "definition_en": "Even if you're better at everything, both sides should specialize in what they do at the lowest relative cost, then trade — total output is maximized. The key is comparing opportunity costs, not absolute skill.",
+      "scenarios_zh": "分工、國際貿易、團隊任務分配。",
+      "scenarios_en": "Division of labor, international trade, team task allocation.",
+      "cases": [
+        {
+          "title_zh": "律師與助理",
+          "title_en": "Lawyer and Assistant",
+          "desc_zh": "律師打字比助理快，但仍應把打字交給助理。因為律師打字的機會成本是「少接一樁案」的數萬元，助理的機會成本只有時薪。專注比較利益，雙方都賺更多。",
+          "desc_en": "A lawyer types faster than the assistant but should still delegate typing: the lawyer's opportunity cost is a lost case worth tens of thousands, the assistant's only an hourly wage. Specializing in comparative advantage enriches both."
+        },
+        {
+          "title_zh": "國家貿易",
+          "title_en": "Country Trade",
+          "desc_zh": "A 國製造農工產品都強於 B 國，但 A 國製造業的相對優勢更大，故 A 應專攻工業、B 專攻農業再貿易。雙方總產出高於各自自給自足。",
+          "desc_en": "Country A outproduces B in both farming and manufacturing, but A's edge in manufacturing is larger, so A should specialize in industry and B in farming, then trade. Combined output exceeds self-sufficiency."
+        },
+        {
+          "title_zh": "創業者分工",
+          "title_en": "Founder Division of Labor",
+          "desc_zh": "技術創辦人雖然也能做行銷，但應專注產品，把行銷交給合夥人。技術人做行銷的機會成本是產品停滯，分工讓兩人各自發揮比較利益。",
+          "desc_en": "A technical founder could also do marketing but should focus on product and hand marketing to a co-founder. Their marketing opportunity cost is product stagnation; division of labor lets each play their comparative advantage."
+        }
+      ]
+    },
+    {
+      "id": "game-theory",
+      "number": 43,
+      "category": "economics",
+      "name_zh": "賽局理論",
+      "name_en": "Game Theory",
+      "definition_zh": "分析多方互動決策的框架：你的最佳策略取決於對手會怎麼做，對手的又取決於你。要贏，得預測並影響他人的選擇，而非只看自己。",
+      "definition_en": "A framework for multi-party interactive decisions: your best move depends on what opponents do, and theirs on you. To win you must predict and influence others' choices, not just look at yourself.",
+      "scenarios_zh": "定價競爭、談判、拍賣。",
+      "scenarios_en": "Pricing competition, negotiation, auctions.",
+      "cases": [
+        {
+          "title_zh": "價格戰",
+          "title_en": "Price Wars",
+          "desc_zh": "兩家對手若都降價，雙方利潤皆薄；若都不降則雙贏。但各自怕對方先降，於是爭相降價落入雙輸。賽局理論點出這種合作與背叛的兩難。",
+          "desc_en": "If both rivals cut prices, profits thin for both; if neither does, both win. But each fears the other cuts first, so both race to cut and both lose. Game theory frames this cooperate-vs-betray dilemma."
+        },
+        {
+          "title_zh": "拍賣出價",
+          "title_en": "Auction Bidding",
+          "desc_zh": "在拍賣中你的最佳出價取決於別人估價多高。過度積極容易贏了標的卻付過高（贏家詛咒），賽局思維提醒要考慮對手資訊再定策略。",
+          "desc_en": "In an auction your best bid depends on how high others value it. Bidding aggressively risks winning but overpaying (winner's curse); game-theoretic thinking factors in rivals' info before strategizing."
+        },
+        {
+          "title_zh": "市場進入嚇阻",
+          "title_en": "Deterring Entry",
+          "desc_zh": "在位者可透過擴大產能、降價承諾來嚇阻潛在競爭者進場。賽局理論分析在位者與進入者的報酬矩陣，找出可置信的威脅與讓步時機。",
+          "desc_en": "An incumbent can deter entrants by committing to capacity expansion or price cuts. Game theory analyzes the incumbent-entrant payoff matrix to find credible threats and when to concede."
+        }
+      ]
+    },
+    {
+      "id": "nash-equilibrium",
+      "number": 44,
+      "category": "economics",
+      "name_zh": "奈許均衡",
+      "name_en": "Nash Equilibrium",
+      "definition_zh": "賽局中各方都選定了一個策略，且無人能「單方面」改變策略而獲益 more 的狀態。此時大家都停在原地，即使結果對集體並非最佳。",
+      "definition_en": "A state where each party has chosen a strategy and none can benefit by changing unilaterally. Everyone stays put — even when the outcome isn't best for the collective.",
+      "scenarios_zh": "寡佔定價、軍備競賽、社會規範。",
+      "scenarios_en": "Oligopoly pricing, arms races, social norms.",
+      "cases": [
+        {
+          "title_zh": "軍備競賽",
+          "title_en": "Arms Race",
+          "desc_zh": "兩國都擴武時誰也不敢先裁，因單方裁武會陷於劣勢——這是奈許均衡，即使雙方都裁武會更好也走不到。需要外部協調才能脫離。",
+          "desc_en": "Two nations arming: neither dares disarm first, since unilateral disarmament means disadvantage — a Nash equilibrium, even though both disarming is better. External coordination is needed to escape it."
+        },
+        {
+          "title_zh": "廣告軍備",
+          "title_en": "Ad Spending Arms Race",
+          "desc_zh": "兩家可樂都不投廣告會雙省，但誰先停投就吃虧，於是都拼命投。奈許均衡讓雙方陷入高廣告支出、利潤被侵蝕的穩定但次優狀態。",
+          "desc_en": "Two cola brands would both save by not advertising, but whoever stops first loses share, so both pour money in. Nash equilibrium traps them in high ad spend and eroded margins — stable but suboptimal."
+        },
+        {
+          "title_zh": "劇場站起來",
+          "title_en": "Standing at the Theater",
+          "desc_zh": "音樂會前排有人站起來看更好，後排被迫也站，最後全部站著看——沒人單方坐下能看得更好。奈許均衡是集體更糟的穩定狀態。",
+          "desc_en": "At a concert the front stands to see better, forcing the back to stand, until all stand — no one can sit and see better alone. A Nash equilibrium that's a stable state worse for all."
+        }
+      ]
+    },
+    {
+      "id": "prisoners-dilemma",
+      "number": 45,
+      "category": "economics",
+      "name_zh": "囚犯困境",
+      "name_en": "Prisoner's Dilemma",
+      "definition_zh": "兩方各自追求自身利益最大，結果雙方都比合作時更糟的經典賽局。它揭示：理性自利在缺乏信任與協調時，會導致集體次優結局。",
+      "definition_en": "The classic game where both sides pursue self-interest and end up worse than if they'd cooperated. It reveals that rational self-interest, without trust or coordination, yields collectively suboptimal outcomes.",
+      "scenarios_zh": "環保、價格戰、公共資源。",
+      "scenarios_en": "Environmental protection, price wars, common resources.",
+      "cases": [
+        {
+          "title_zh": "漁業過捕",
+          "title_en": "Overfishing",
+          "desc_zh": "每位漁夫多捕一些對自己有利，但大家都多捕則漁源枯竭、全體更糟。這是典型的囚犯困境，需要配額制度建立合作才能破解。",
+          "desc_en": "Each fisher gains by catching more, but if all do, stocks collapse and all are worse off — a textbook prisoner's dilemma requiring quota systems to enforce cooperation."
+        },
+        {
+          "title_zh": "卡特爾背叛",
+          "title_en": "Cartel Cheating",
+          "desc_zh": "石油輸出國約定減產拉抬油價，但成員各自偷偷增產以多賺，最後油價崩跌。承諾合作的各方在利益誘惑下背叛，正是囚犯困境。",
+          "desc_en": "Oil producers agree to cut output to lift prices, but each secretly pumps more to earn extra — prices crash. Parties committing to cooperate betray under temptation: the prisoner's dilemma."
+        },
+        {
+          "title_zh": "辦公室加班",
+          "title_en": "Office Overtime",
+          "desc_zh": "員工各自想「多留一下讓老闆看到」，結果全員都加班、效率下降、生活品質變差，卻沒人敢先走。囚犯困境讓集體陷入內耗。",
+          "desc_en": "Each employee stays late to 'be seen by the boss', so all overwork, efficiency drops, life quality worsens, yet none dares leave first. The prisoner's dilemma drags the collective into burnout."
+        }
+      ]
+    },
+    {
+      "id": "signaling",
+      "number": 46,
+      "category": "economics",
+      "name_zh": "訊號理論",
+      "name_en": "Signaling",
+      "definition_zh": "為了讓對方相信某種不易驗證的特質（如能力、品質），你付出一個「偽造成本高」的代價作為訊號。學歷就是能力的經典訊號。",
+      "definition_en": "To convince others of a hard-to-verify trait (ability, quality), you pay a costly-to-fake price as a signal. A degree is the classic signal of ability.",
+      "scenarios_zh": "求職、品牌建立、求偶。",
+      "scenarios_en": "Job seeking, brand building, courtship.",
+      "cases": [
+        {
+          "title_zh": "名校學歷",
+          "title_en": "Elite Degrees",
+          "desc_zh": "名校學歷未必學到更多，但能讀完代表毅力與智力達某水準，且偽造極難，因此成為能力的可信訊號。雇主用它快速篩選，降低驗證成本。",
+          "desc_en": "An elite degree may not teach more, but finishing one signals grit and intelligence above a bar, and is hard to forge — a credible signal of ability. Employers use it to screen cheaply."
+        },
+        {
+          "title_zh": "長期保固",
+          "title_en": "Long Warranties",
+          "desc_zh": "廠商提供十年保固，是在訊號「我對品質有信心」。劣質品不敢給長保固，因為會被維修成本壓垮。保固長度成為品質的可信訊號。",
+          "desc_en": "A ten-year warranty signals 'I'm confident in quality'. Poor products dare not offer long warranties — repair costs would crush them. Warranty length becomes a credible quality signal."
+        },
+        {
+          "title_zh": "昂貴求婚",
+          "title_en": "Costly Proposals",
+          "desc_zh": "鑽戒與盛大求婚對實用無益，但付出高昂代價本身在訊號「我認真、願意投入」。訊號越難偽造、越昂貴，越能說服對方承諾可信。",
+          "desc_en": "A diamond ring and lavish proposal add no utility, but the high cost itself signals 'I'm serious, I'll invest'. The harder and costlier to fake, the more convincing the commitment."
+        }
+      ]
+    },
+    {
+      "id": "moral-hazard",
+      "number": 47,
+      "category": "economics",
+      "name_zh": "道德風險",
+      "name_en": "Moral Hazard",
+      "definition_zh": "當一方不必承擔自身行為的全部後果時，會傾向採取更高風險的行為。保了全險的車主開車更魯莽，因為出事不用全額自付。",
+      "definition_en": "When one party doesn't bear the full consequences of their actions, they tend to take riskier ones. A fully insured driver drives more recklessly because they won't pay full cost of a crash.",
+      "scenarios_zh": "保險設計、金融監管、代理關係。",
+      "scenarios_en": "Insurance design, financial regulation, agency relationships.",
+      "cases": [
+        {
+          "title_zh": "全險與駕駛",
+          "title_en": "Full Coverage and Driving",
+          "desc_zh": "保全險的駕駛比只保強制險的更敢闖紅燈、違停，因為損失由保險吸收。保險公司用自負額設計讓駕駛承擔部分後果，以降低道德風險。",
+          "desc_en": "A fully insured driver runs reds and double-parks more, since losses are absorbed by the insurer. Insurers use deductibles so drivers bear some consequence, curbing moral hazard."
+        },
+        {
+          "title_zh": "大到不能倒",
+          "title_en": "Too Big to Fail",
+          "desc_zh": "銀行預期政府會紓困，於是敢冒高風險放貸，賺了歸股東、虧了由納稅人承擔。這是系統性道德風險，需更嚴監管與自有資本要求來抑制。",
+          "desc_en": "Banks expect bailouts and lend aggressively — gains to shareholders, losses to taxpayers. This systemic moral hazard needs stricter regulation and capital requirements to contain."
+        },
+        {
+          "title_zh": "失業保險",
+          "title_en": "Unemployment Insurance",
+          "desc_zh": "優厚的失業給付可能讓求職者更不急著找工作。這不是說不該有失業保險，而是設計上要平衡保障與工作誘因，例如限期與求職證明。",
+          "desc_en": "Generous unemployment benefits may make job-seekers less urgent. This doesn't mean no insurance — design must balance protection and incentives, e.g., time limits and job-search proof."
+        }
+      ]
+    },
+    {
+      "id": "adverse-selection",
+      "number": 48,
+      "category": "economics",
+      "name_zh": "逆向選擇",
+      "name_en": "Adverse Selection",
+      "definition_zh": "當買賣雙方資訊不對稱，交易會吸引「對賣方不利」的高風險一方。例如最願意買保險的常是健康最差的人，使保險公司虧損。",
+      "definition_en": "When information is asymmetric, trades attract the high-risk party 'unfavorable to the seller'. E.g., those most eager to buy insurance are often the least healthy, saddling insurers with losses.",
+      "scenarios_zh": "保險、二手市場、貸款。",
+      "scenarios_en": "Insurance, used-goods markets, lending.",
+      "cases": [
+        {
+          "title_zh": "檸檬市場",
+          "title_en": "The Market for Lemons",
+          "desc_zh": "二手車賣方清楚車況、買方不知。買方只願出「平均車況」價，好車主覺得不划算而退出，市場剩下壞車。逆向選擇讓劣幣驅逐良幣。",
+          "desc_en": "Used-car sellers know the car's condition, buyers don't. Buyers offer only 'average' prices, so good-car owners withdraw, leaving lemons. Adverse selection drives good money out with bad."
+        },
+        {
+          "title_zh": "健康險",
+          "title_en": "Health Insurance",
+          "desc_zh": "身體差的人最想買醫療險，健康者覺得不必要。保險公司若統一定價，會虧在高風險者，只好漲價，又逼走更多健康者，陷入死亡螺旋。",
+          "desc_en": "The unhealthy most want medical insurance; the healthy skip it. If priced flat, insurers lose on high-risk, raise premiums, driving away more healthy — a death spiral."
+        },
+        {
+          "title_zh": "高息放款",
+          "title_en": "High-Interest Lending",
+          "desc_zh": "銀行以高利率放款時，願意借款的多是高風險者（穩健者借不起這利率），貸款品質惡化。逆向選擇使利率越高、違約率越高的惡性循環。",
+          "desc_en": "At high interest rates, those willing to borrow are mostly high-risk (sound borrowers can't afford it), so loan quality worsens. Adverse selection makes higher rates feed higher default rates."
+        }
+      ]
+    },
+    {
+      "id": "principal-agent",
+      "number": 49,
+      "category": "economics",
+      "name_zh": "委託代理問題",
+      "name_en": "Principal-Agent Problem",
+      "definition_zh": "委託人（如股東）雇用代理人（如執行長）代為行事，但雙方利益不一致且代理人行為難以完全監督，代理人可能為己謀利而損及委託人。",
+      "definition_en": "A principal (shareholders) hires an agent (CEO) to act on their behalf, but interests diverge and the agent's behavior can't be fully monitored — the agent may profit at the principal's expense.",
+      "scenarios_zh": "公司治理、雇傭、外包。",
+      "scenarios_en": "Corporate governance, employment, outsourcing.",
+      "cases": [
+        {
+          "title_zh": "執行長薪酬",
+          "title_en": "CEO Compensation",
+          "desc_zh": "執行長追求短期股價以兌現選擇權，犧牲公司長期研發。股東（委託人）與執行長（代理人）利益分歧，需股權長期持有與績效門檻來對齊。",
+          "desc_en": "A CEO chases short-term stock price to cash options, sacrificing long-term R&D. Shareholders (principal) and CEO (agent) diverge; long-hold equity and performance hurdles help align them."
+        },
+        {
+          "title_zh": "房客與房東",
+          "title_en": "Tenant and Landlord",
+          "desc_zh": "房客不愛惜房屋，因為修繕成本由房東承擔。房東（委託人）難以時刻監督房客（代理人），故用押金機制讓房客承擔部分後果。",
+          "desc_en": "A tenant doesn't care for the unit since repair costs fall on the landlord. The landlord (principal) can't monitor the tenant (agent) constantly, so a deposit makes the tenant bear some consequence."
+        },
+        {
+          "title_zh": "裝修外包",
+          "title_en": "Renovation Outsourcing",
+          "desc_zh": "屋主委託包商裝修，包商可能偷工減料以多賺，屋主難以查驗每個環節。合約分期付款、保固與第三方驗收，是緩解委託代理問題的工具。",
+          "desc_en": "A homeowner hires a contractor who may cut corners to profit, hard for the owner to verify everywhere. Milestone payments, warranties, and third-party inspection are tools to ease the principal-agent problem."
+        }
+      ]
+    },
+    {
+      "id": "tragedy-of-the-commons",
+      "number": 50,
+      "category": "economics",
+      "name_zh": "公有地悲劇",
+      "name_en": "Tragedy of the Commons",
+      "definition_zh": "當資源為多人共有、又無使用限制時，每人理性追求自身利益最大化，會導致資源過度消耗而全體受害。個體理性造成集體災難。",
+      "definition_en": "When a resource is shared and unregulated, each person rationally maximizes self-interest, leading to overuse that harms all. Individual rationality produces collective disaster.",
+      "scenarios_zh": "環境保護、公共資源、共用資源。",
+      "scenarios_en": "Environmental protection, public resources, shared assets.",
+      "cases": [
+        {
+          "title_zh": "草原放牧",
+          "title_en": "Common Pasture",
+          "desc_zh": "村莊共用一片草地，每戶多放一頭牛對自己有利、對草地損害由全村分攤，於是家家多放，草地最終退化無法放牧。這是原始的公有地悲劇。",
+          "desc_en": "A village shares a pasture; each household gains by adding a cow while damage is shared, so all add cows until the pasture degrades. The original tragedy of the commons."
+        },
+        {
+          "title_zh": "海洋漁業",
+          "title_en": "Ocean Fisheries",
+          "desc_zh": "公海無國界，各國船隊競相捕撈，魚群崩潰後全體漁民失業。專屬經濟海域、配額、禁漁期是把公有資源轉為可管理的嘗試。",
+          "desc_en": "The high seas are borderless; fleets compete to catch until stocks collapse and all fishers lose jobs. EEZs, quotas, and closed seasons attempt to turn commons into managed resources."
+        },
+        {
+          "title_zh": "辦公室冰箱",
+          "title_en": "The Office Fridge",
+          "desc_zh": "公共冰箱沒人專責，食物亂放、過期不清，最後發臭無人敢用。把「清理」指定為某人的職責或輪值，是把公有地悲劇制度化解決的方法。",
+          "desc_en": "A shared fridge has no owner — food piles up, spoils, and stinks until no one uses it. Assigning cleaning to someone or rotating it institutionalizes a fix to the commons tragedy."
+        }
+      ]
+    },
+    {
+      "id": "switching-costs",
+      "number": 51,
+      "category": "economics",
+      "name_zh": "轉換成本",
+      "name_en": "Switching Costs",
+      "definition_zh": "消費者從一產品轉向另一產品時需付出的金錢、時間、學習、資料遷移等成本。轉換成本越高，現有廠商的鎖定力越強、定價空間越大。",
+      "definition_en": "The money, time, learning, and data-migration costs a consumer pays moving from one product to another. The higher the switching cost, the stronger the incumbent's lock-in and pricing power.",
+      "scenarios_zh": "訂閱服務、企業軟體、生態系策略。",
+      "scenarios_en": "Subscription services, enterprise software, ecosystem strategy.",
+      "cases": [
+        {
+          "title_zh": "企業軟體鎖定",
+          "title_en": "Enterprise Software Lock-in",
+          "desc_zh": "公司用了某 ERP 系統多年，員工熟悉、流程已嵌入、資料龐大，換系統要重訓全員、移轉資料、中斷作業。高昂轉換成本讓供應商敢年年漲價。",
+          "desc_en": "A firm on an ERP for years has trained staff, embedded processes, huge data; switching means retraining, migration, downtime. High switching costs let the supplier raise prices yearly."
+        },
+        {
+          "title_zh": "手機生態",
+          "title_en": "Phone Ecosystem",
+          "desc_zh": "已購的 App、iCloud 照片、家庭群組訊息都綁在原系統，換到另一陣營要重新購買與遷移。轉換成本讓使用者即使不滿意也捨不得換。",
+          "desc_en": "Purchased apps, cloud photos, and family group chats are tied to the original OS; switching means rebuying and migrating. Switching costs keep users even when dissatisfied."
+        },
+        {
+          "title_zh": "銀行帳戶",
+          "title_en": "Bank Accounts",
+          "desc_zh": "換銀行要改薪資入帳、自動扣款、重新設定所有綁定服務，瑣碎又費時。轉換成本讓許多人明知手續費偏高仍多年不換，銀行因此享有定價權。",
+          "desc_en": "Switching banks means changing payroll, auto-debits, and all linked services — tedious and time-consuming. Switching costs keep many at high-fee banks for years, granting pricing power."
+        }
+      ]
+    },
+    {
+      "id": "bundling",
+      "number": 52,
+      "category": "economics",
+      "name_zh": "搭售",
+      "name_en": "Bundling",
+      "definition_zh": "把多項產品打包成一套銷售，可提高總支付意願、降低消費者對單品價格的敏感度，並逼對手難以單品競爭。對邊際成本低、品項多的供應商尤其有利。",
+      "definition_en": "Packaging multiple products as one bundle raises total willingness-to-pay, dulls per-item price sensitivity, and makes it hard for rivals to compete item-by-item. Especially advantageous for low-marginal-cost, multi-item suppliers.",
+      "scenarios_zh": "軟體訂閱、影音套餐、產品組合。",
+      "scenarios_en": "Software subscriptions, media packages, product combos.",
+      "cases": [
+        {
+          "title_zh": "辦公套裝軟體",
+          "title_en": "Office Suite Bundling",
+          "desc_zh": "廠商把文書、試算表、簡報打包銷售，消費者為常用的一兩個願付全套價，等於免費取得其他工具。對手若只做單一文書軟體，難以在價格上競爭。",
+          "desc_en": "A vendor bundles word processing, spreadsheet, and slides; consumers pay the bundle price for the one or two they use, getting the rest 'free'. A single-word-processor rival can't compete on price."
+        },
+        {
+          "title_zh": "有線電視套餐",
+          "title_en": "Cable Packages",
+          "desc_zh": "數十頻道綁在一起賣，觀眾為想看的幾台支付全套餐費。拆開單賣時，多數人只願付少數幾台，營運商總收入會大減——這就是搭售的利潤魔法。",
+          "desc_en": "Dozens of channels sold together; viewers pay the full package for the few they want. Sold individually, most would pay for only a few and total revenue would drop sharply — bundling's profit magic."
+        },
+        {
+          "title_zh": "速食套餐",
+          "title_en": "Fast-Food Combos",
+          "desc_zh": "主餐加薯條加飲料比單點總價便宜，誘使消費者買更多。對店家而言飲料邊際成本極低，套餐提升客單價又清庫存，是雙贏的搭售設計。",
+          "desc_en": "Burger + fries + drink costs less than à la carte, nudging customers to buy more. For the store, drinks have near-zero marginal cost — combos lift ticket size and clear inventory: a win-win bundle."
+        }
+      ]
+    },
+    {
+      "id": "price-discrimination",
+      "number": 53,
+      "category": "economics",
+      "name_zh": "價格歧視",
+      "name_en": "Price Discrimination",
+      "definition_zh": "對相同商品向不同消費者收取不同價格，依其支付意願最大化利潤。關鍵在於能區隔市場且防止低價者轉售給高價者。",
+      "definition_en": "Charging different consumers different prices for the same good, maximizing profit by willingness to pay. The key is segmenting markets and preventing low-price buyers from reselling to high-price ones.",
+      "scenarios_zh": "機票、軟體定價、優待票。",
+      "scenarios_en": "Airline tickets, software pricing, discount tickets.",
+      "cases": [
+        {
+          "title_zh": "機票定價",
+          "title_en": "Airline Pricing",
+          "desc_zh": "同班機商務客付全價、早鳥旅客半價、學生另有優惠。航空公司用購買時間、彈性條件區隔旅客，向時間敏感者收高價、向價格敏感者收低價，榨取最大營收。",
+          "desc_en": "On one flight, business pays full fare, early birds half, students get a discount. Airlines segment by purchase timing and flexibility — charging time-sensitive travelers high and price-sensitive low, maximizing revenue."
+        },
+        {
+          "title_zh": "軟體版本",
+          "title_en": "Software Editions",
+          "desc_zh": "同一套軟體分個人版、專業版、企業版，功能差異其實不大，但用價格區隔願付高價的企業客戶與精打細算的個人用戶，各自付到極限。",
+          "desc_en": "The same software ships in personal, pro, and enterprise editions — functional gaps are small, but price segments high-willingness enterprises from thrifty individuals, each paying near their ceiling."
+        },
+        {
+          "title_zh": "電影優待票",
+          "title_en": "Discount Movie Tickets",
+          "desc_zh": "電影院對學生、長者、早場收較低價，因這些客群對價格敏感、原可能不來。全價客不會為了便宜而冒充學生，區隔有效，戲院多賺了一群原本不會消費的客人。",
+          "desc_en": "Cinemas charge students, seniors, and matinees less — price-sensitive groups that otherwise might not come. Full-price patrons won't masquerade as students, so segmentation holds and the theater gains extra customers."
+        }
+      ]
+    },
+    {
+      "id": "winners-curse",
+      "number": 54,
+      "category": "economics",
+      "name_zh": "贏家詛咒",
+      "name_en": "Winner's Curse",
+      "definition_zh": "在多方競標中，得標者往往是對標的估值最高（也最可能高估）的人。贏了標的，卻可能付了超過真實價值的錢，反而成為詛咒。",
+      "definition_en": "In multi-party bidding, the winner is usually the one who valued the item highest (and most likely overvalued it). Winning the bid may mean paying above true value — a curse.",
+      "scenarios_zh": "拍賣、併購、工程招標。",
+      "scenarios_en": "Auctions, M&A, procurement bidding.",
+      "cases": [
+        {
+          "title_zh": "土地標售",
+          "title_en": "Land Auction",
+          "desc_zh": "數家建商競標一塊地，得標者往往是對未來房價最樂觀者。若該樂觀預期落空，得標價就高於真實價值，建商反而被套牢。贏家詛咒讓得標未必是好事。",
+          "desc_en": "Several developers bid on a plot; the winner is the most optimistic on future prices. If that optimism fails, the bid exceeds true value and the developer is trapped. Winning the curse means winning isn't always good."
+        },
+        {
+          "title_zh": "企業併購",
+          "title_en": "Corporate M&A",
+          "desc_zh": "併購競標中出價最高的公司常高估綜效，得標後發現整合困難、綜效縮水，溢價成了損失。研究顯示併購得標方股東常在長期跑輸。",
+          "desc_en": "The top bidder in M&A often overestimates synergies; post-deal, integration is hard and synergies shrink, so the premium becomes a loss. Studies show winning acquirers often underperform long-term."
+        },
+        {
+          "title_zh": "自由球員",
+          "title_en": "Free-Agent Bidding",
+          "desc_zh": "球隊競標自由球員，出價最高者往往是對其未來表現最樂觀的。簽下大約後球員表現未達預期，合約成為球隊薪資包袱——體育界的贏家詛咒。",
+          "desc_en": "Teams bid on free agents; the top bidder is the most optimistic on future performance. After a big deal, performance falls short and the contract becomes a payroll burden — sports' winner's curse."
+        }
+      ]
+    },
+    {
+      "id": "time-value-of-money",
+      "number": 55,
+      "category": "economics",
+      "name_zh": "貨幣時間價值",
+      "name_en": "Time Value of Money",
+      "definition_zh": "今天的一塊錢比明天的一塊錢更值錢，因為錢可用於投資產生報酬、且通膨侵蝕未來購買力。比較不同時點的現金流，必須先折現到同一時點。",
+      "definition_en": "A dollar today is worth more than a dollar tomorrow, because money can be invested to earn returns and inflation erodes future purchasing power. Comparing cash flows at different times requires discounting to one point.",
+      "scenarios_zh": "投資評估、貸款比較、年金規劃。",
+      "scenarios_en": "Investment appraisal, loan comparison, annuity planning.",
+      "cases": [
+        {
+          "title_zh": "分期付款陷阱",
+          "title_en": "Installment Trap",
+          "desc_zh": "「現金價 10 萬」與「分期 12 期共 11 萬」看似只多一萬，但把未來每期金額折現回今天，再與通膨與機會成本比較，真實利率可能高得驚人。",
+          "desc_en": "'Cash 100k' vs '12 installments totaling 110k' looks like only 10k more, but discounting future payments to today and comparing with inflation and opportunity cost reveals a surprisingly high real rate."
+        },
+        {
+          "title_zh": "退休金提撥",
+          "title_en": "Retirement Contributions",
+          "desc_zh": "25 歲開始每月存 5000 與 35 歲才開始，到 65 歲差距巨大，因為早開始的錢有更長的複利時間。貨幣時間價值說明越早投入越值錢。",
+          "desc_en": "Starting at 25 to save 5,000/month vs at 35 makes a huge gap by 65, because early money compounds far longer. The time value of money shows earlier contributions are worth far more."
+        },
+        {
+          "title_zh": "專案淨現值",
+          "title_en": "Project NPV",
+          "desc_zh": "一個三年後才產生 1000 萬收益的專案，今天的價值不是 1000 萬，而是按折現率換算後的現值。用淨現值排序專案，才能正確比較時間不同的投資。",
+          "desc_en": "A project paying 10M only in year three isn't worth 10M today but its present value at a discount rate. Ranking projects by NPV correctly compares investments with different timing."
+        }
+      ]
+    },
+    {
+      "id": "base-rate",
+      "number": 56,
+      "category": "probability",
+      "name_zh": "基礎比率",
+      "name_en": "Base Rate",
+      "definition_zh": "判斷某事物屬於某類別的機率時，應先參考該類別在母體中的基本發生率（基礎比率），再依個案特徵修正。忽略基礎比率是預測失準的主因。",
+      "definition_en": "When judging the probability something belongs to a category, first consult its base rate in the population, then adjust for case-specific evidence. Ignoring base rates is a main cause of bad forecasts.",
+      "scenarios_zh": "醫學診斷、徵才篩選、風險預測。",
+      "scenarios_en": "Medical diagnosis, recruiting screens, risk forecasting.",
+      "cases": [
+        {
+          "title_zh": "罕病篩檢",
+          "title_en": "Rare-Disease Screening",
+          "desc_zh": "某病盛行率僅 0.1%，篩檢準確率 99%。你陽性，真實患病機率其實不到 10%——因為基礎比率極低，偽陽性比真陽性還多。忽略基礎比率會造成無謂恐慌。",
+          "desc_en": "A disease has 0.1% prevalence and a 99% accurate test. If you test positive, real disease probability is under 10% — because the base rate is so low, false positives outnumber true ones. Ignoring base rates breeds needless panic."
+        },
+        {
+          "title_zh": "名校創業",
+          "title_en": "Elite-School Founders",
+          "desc_zh": "看到名校輟學生創業成功就覺得「名校輟學易成功」，忽略創業整體成功率只有一成這個基礎比率。名校身分是修正項，不能覆蓋極低的基礎比率。",
+          "desc_en": "Seeing elite dropouts succeed makes 'dropping out helps' seem true, ignoring the 10% overall startup success base rate. Elite status is an adjustment; it can't override the very low base rate."
+        },
+        {
+          "title_zh": "書評預測",
+          "title_en": "Predicting Bestsellers",
+          "desc_zh": "一本書看來「寫得很好」，但每年出版數萬本書、暢銷書只佔 1%。不把基礎比率納入，光憑直覺會大幅高估任一新書成為暢銷書的機率。",
+          "desc_en": "A book 'reads well', but of tens of thousands published yearly only 1% become bestsellers. Without the base rate, intuition hugely overestimates any new book's chance of topping the charts."
+        }
+      ]
+    },
+    {
+      "id": "bayes-theorem",
+      "number": 57,
+      "category": "probability",
+      "name_zh": "貝氏定理",
+      "name_en": "Bayes' Theorem",
+      "definition_zh": "在有新證據時更新信念的數學法則：後驗機率＝先驗機率 × 證據似然度，再標準化。它教你「看到新資訊後，信念該調整多少」。",
+      "definition_en": "The rule for updating beliefs with new evidence: posterior = prior × likelihood, normalized. It teaches 'how much to adjust belief given new information'.",
+      "scenarios_zh": "診斷更新、投資修正、預測調整。",
+      "scenarios_en": "Diagnostic updating, investment revision, forecast adjustment.",
+      "cases": [
+        {
+          "title_zh": "癌症診斷",
+          "title_en": "Cancer Diagnosis",
+          "desc_zh": "先驗：某癌盛行率 1%。檢驗陽性的似然：真患者 90% 陽性、非患者 10% 偽陽性。用貝氏定理算出陽性後真實患病率約 8.3%——比直覺低很多，避免過度治療。",
+          "desc_en": "Prior: 1% prevalence. Likelihood of positive: 90% of true cases, 10% false positives. Bayes gives ~8.3% real disease after a positive — far below intuition, preventing overtreatment."
+        },
+        {
+          "title_zh": "投資信念更新",
+          "title_en": "Updating an Investment Thesis",
+          "desc_zh": "你原估某公司六成機會成功，新財報不及格。用貝氏思維：把新證據的似然度代入，下修至三成，及時減碼。不是「全錯」或「不變」，而是按證據強度調整。",
+          "desc_en": "You rated a company 60% likely to succeed; a miss on earnings arrives. Bayes-style: weight the new evidence and revise down to 30%, trimming the position. Not 'totally wrong' or 'unchanged' — adjust by evidence strength."
+        },
+        {
+          "title_zh": "信用卡盜刷",
+          "title_en": "Credit-Card Fraud",
+          "desc_zh": "系統偵測到異常交易，但盜刷基礎比率極低、正常交易中也偶有異常。貝氏模型結合兩者算出真實盜刷機率，避免把大量正常客戶誤擋。",
+          "desc_en": "A system flags odd transactions, but fraud's base rate is tiny and normal transactions occasionally look odd. A Bayesian model combines both to score real fraud probability — avoiding blocking hordes of good customers."
+        }
+      ]
+    },
+    {
+      "id": "expected-value",
+      "number": 58,
+      "category": "probability",
+      "name_zh": "期望值",
+      "name_en": "Expected Value",
+      "definition_zh": "把每個可能結果的價值乘以其發生機率，再加總，得到「平均而言」這個決策值多少。長期重複下，期望值正的決策會勝出，即使單次會輸。",
+      "definition_en": "Multiply each possible outcome's value by its probability and sum — the 'on average' worth of a decision. Repeated long-term, positive-EV decisions win even if single tries lose.",
+      "scenarios_zh": "投資、賭注、保險決策。",
+      "scenarios_en": "Investing, betting, insurance decisions.",
+      "cases": [
+        {
+          "title_zh": "創投押注",
+          "title_en": "VC Bets",
+          "desc_zh": "十家新創九家歸零、一家百倍回報，期望值仍為正。創投不是賭單一公司會成，而是建立投注組合讓期望值發揮，靠少數大贏覆蓋多數小輸。",
+          "desc_en": "Of ten startups, nine go to zero and one returns 100x — expected value is still positive. VC isn't betting one company wins; it's building a portfolio so EV plays out, with few big wins covering many small losses."
+        },
+        {
+          "title_zh": "保險購買",
+          "title_en": "Buying Insurance",
+          "desc_zh": "對保險公司，賣保單的期望值為正（精算定價）。對你，買保險的期望值為負，但目的是避免無法承受的尾部損失。期望值之外，還要考慮破產風險。",
+          "desc_en": "For insurers, selling a policy has positive EV (actuarially priced). For you, buying it has negative EV — but the purpose is to avoid unbearable tail losses. Beyond EV, consider ruin risk."
+        },
+        {
+          "title_zh": "訴訟和解",
+          "title_en": "Lawsuit Settlement",
+          "desc_zh": "上法庭勝率六成、可獲 100 萬，期望值 60 萬；對方和解開價 50 萬。理性上應訴，但要考慮訴訟費用、時間與情緒成本後，和解未必是錯的選擇。",
+          "desc_en": "Going to trial: 60% to win 1M, EV 600k; the other side offers 500k to settle. Rationally litigate, but factoring fees, time, and emotional cost, settling isn't necessarily wrong."
+        }
+      ]
+    },
+    {
+      "id": "law-of-large-numbers",
+      "number": 59,
+      "category": "probability",
+      "name_zh": "大數法則",
+      "name_en": "Law of Large Numbers",
+      "definition_zh": "當樣本數越大，樣本平均會越接近真實期望值。短期少數觀察可能偏離很大，長期大量重複後結果才會收斂到理論值。",
+      "definition_en": "As sample size grows, the sample mean converges to the true expected value. Short-term small samples can deviate greatly; only long-run repetition converges to the theoretical value.",
+      "scenarios_zh": "賭場、品質抽檢、長期投資。",
+      "scenarios_en": "Casinos, quality sampling, long-term investing.",
+      "cases": [
+        {
+          "title_zh": "賭場為何必勝",
+          "title_en": "Why Casinos Win",
+          "desc_zh": "單一賭客某晚可能大贏，但賭場面對數百萬次下注，大數法則讓莊家優勢穩定兌現。短期波動對賭場無害，長期期望值才是它的利潤來源。",
+          "desc_en": "A single gambler may win big one night, but the casino faces millions of bets; the law of large numbers makes the house edge materialize. Short-term swings don't hurt — long-term EV is its profit source."
+        },
+        {
+          "title_zh": "基金長期績效",
+          "title_en": "Long-Run Fund Performance",
+          "desc_zh": "一年的績效可能靠運氣，十年的績效才接近真實能力。大數法則提醒：評估經理人要看夠長的樣本，否則會把運氣誤認為實力。",
+          "desc_en": "One year's performance may be luck; ten years approaches true skill. The law of large numbers warns: judge managers on a long-enough sample, or you'll mistake luck for ability."
+        },
+        {
+          "title_zh": "抽樣品檢",
+          "title_en": "Sampling Inspection",
+          "desc_zh": "抽 5 件可能恰好全良或全不良，誤差極大；抽 500 件的不良率則接近真實。大數法則是品管抽樣數設定的理論基礎。",
+          "desc_en": "Sampling 5 units may be all good or all bad — huge error; sampling 500 gives a defect rate near truth. The law of large numbers underpins how many to sample in quality control."
+        }
+      ]
+    },
+    {
+      "id": "central-limit-theorem",
+      "number": 60,
+      "category": "probability",
+      "name_zh": "中央極限定理",
+      "name_en": "Central Limit Theorem",
+      "definition_zh": "無論母體分布為何，只要樣本夠大，樣本平均數的分布會趨近常態分配。這讓我們能用常態分配的工具去推論各種未知母體，是統計推論的基石。",
+      "definition_en": "Regardless of the population distribution, with large enough samples the distribution of sample means approaches normal. This lets us use normal-distribution tools to infer about unknown populations — the bedrock of statistical inference.",
+      "scenarios_zh": "民調、品質管制、實驗分析。",
+      "scenarios_en": "Polling, quality control, experiment analysis.",
+      "cases": [
+        {
+          "title_zh": "選舉民調",
+          "title_en": "Election Polling",
+          "desc_zh": "即使選民支持度分布不規則，只要抽樣上千人，多次抽樣的「支持率平均」會呈常態分配，因此能計算誤差範圍與信心水準，民調才有意義。",
+          "desc_en": "Even with irregular voter preference, sampling over a thousand people makes the distribution of 'average support rates' normal — so margins of error and confidence levels can be computed, and polls mean something."
+        },
+        {
+          "title_zh": "工廠品管",
+          "title_en": "Factory Quality Control",
+          "desc_zh": "每批產品重量分布可能偏態，但每日抽取數十批、計算各批平均重量的分布會接近常態。品管工程師據此設定管制上下限，偵測異常。",
+          "desc_en": "Per-batch weights may be skewed, but averaging across dozens of batches a day yields a near-normal distribution of batch means. Engineers set control limits on this to detect anomalies."
+        },
+        {
+          "title_zh": "A/B 測試",
+          "title_en": "A/B Testing",
+          "desc_zh": "網站轉換率本身是 0/1 分布，但測試數萬訪客後，兩版本轉換率差異的分布近似常態，因此能用 z 檢定判斷差異是否顯著，而非來自雜訊。",
+          "desc_en": "Conversion is a 0/1 distribution, but with tens of thousands of visitors the distribution of the difference between two variants is approximately normal — so a z-test can tell signal from noise."
+        }
+      ]
+    },
+    {
+      "id": "regression-to-the-mean",
+      "number": 61,
+      "category": "probability",
+      "name_zh": "均值回歸",
+      "name_en": "Regression to the Mean",
+      "definition_zh": "極端的表現或觀測值，下次往往會向平均值靠攏，因為極端值常含運氣成分。把回歸誤歸因於干預，是生活與管理中最常見的判斷錯誤之一。",
+      "definition_en": "Extreme performances or observations tend to move toward the average next time, because extremes partly reflect luck. Mistaking regression for an intervention's effect is among the most common judgment errors.",
+      "scenarios_zh": "績效管理、教育、運動評論。",
+      "scenarios_en": "Performance management, education, sports commentary.",
+      "cases": [
+        {
+          "title_zh": "球員二年級症",
+          "title_en": "Sophomore Slump",
+          "desc_zh": "新人王第二季表現往往下滑，常被說「驕傲了」。其實新人年的超高表現含運氣，第二年只是回歸平均。把回歸誤當退步，會錯怪球員。",
+          "desc_en": "Rookies of the year often slump in season two, blamed for 'getting cocky'. The rookie year's high partly was luck; season two is regression to the mean. Mistaking it for decline misjudges the player."
+        },
+        {
+          "title_zh": "罵了就進步",
+          "title_en": "'Scolding Works'",
+          "desc_zh": "員工表現最差時被主管痛罵，下期成績變好，主管以為罵有效。其實極差本就容易回歸平均。不對照控制組，會把運氣歸功於自己的管理。",
+          "desc_en": "An employee's worst period earns a scolding; next period improves and the manager credits the scolding. But extremes regress anyway. Without a control group, luck gets credited to management."
+        },
+        {
+          "title_zh": "名師補習",
+          "title_en": "Cram-School Effects",
+          "desc_zh": "模擬考極低分的學生去補習後成績回升，補習班宣稱功勞。但低分本就容易回歸平均，要驗證補習成效，必須比較同樣低分但沒補習的對照組。",
+          "desc_en": "A student scoring very low on a mock exam enrolls in cram school and scores rise; the school claims credit. But low scores regress anyway — to validate, compare a control group of equally low scorers who didn't enroll."
+        }
+      ]
+    },
+    {
+      "id": "normal-distribution",
+      "number": 62,
+      "category": "probability",
+      "name_zh": "常態分配",
+      "name_en": "Normal Distribution",
+      "definition_zh": "鐘形曲線，多數值聚集在平均附近、兩尾對稱稀少。許多自然與社會現象（身高、量測誤差）近似常態，可用標準差快速判斷某值有多極端。",
+      "definition_en": "The bell curve: most values cluster near the mean with symmetric, thin tails. Many natural and social phenomena (height, measurement error) approximate it; standard deviation gauges how extreme a value is.",
+      "scenarios_zh": "品質管控、測驗計分、風險評估。",
+      "scenarios_en": "Quality control, test scoring, risk assessment.",
+      "cases": [
+        {
+          "title_zh": "身高分布",
+          "title_en": "Height Distribution",
+          "desc_zh": "成人男性身高多集中在 170 公分附近，190 公分以上者很少。用常態分配可算出某身高出現的機率，是醫學與服裝尺碼設計的基礎。",
+          "desc_en": "Adult male heights cluster near 170cm, with 190cm-plus quite rare. The normal distribution yields the probability of any height — foundational to medicine and apparel sizing."
+        },
+        {
+          "title_zh": " IQ 測驗",
+          "title_en": "IQ Tests",
+          "desc_zh": "IQ 被設計成平均 100、標準差 15 的常態分配。130 以上約僅 2%，代表「資優」。常態分配讓智力水準可比較，但也常被過度解讀。",
+          "desc_en": "IQ is designed as a normal distribution with mean 100, SD 15. Above 130 is about 2% — 'gifted'. Normality makes intelligence levels comparable, though often over-interpreted."
+        },
+        {
+          "title_zh": "製程管制",
+          "title_en": "Process Control",
+          "desc_zh": "產品尺寸呈常態時，管制圖用 ±3 標準差為界限，超過即視為異常而非隨機波動。這讓工廠能即時分辨「正常變動」與「真正故障」。",
+          "desc_en": "When product dimensions are normal, control charts use ±3 SD as limits; beyond is anomaly, not random noise. This lets factories distinguish normal variation from real faults in real time."
+        }
+      ]
+    },
+    {
+      "id": "correlation-vs-causation",
+      "number": 63,
+      "category": "probability",
+      "name_zh": "相關不等於因果",
+      "name_en": "Correlation vs. Causation",
+      "definition_zh": "兩件事一起變動（相關）不代表一個導致另一個（因果）。可能是巧合、可能有第三個共同原因、可能方向相反。把相關當因果，會做出錯誤干預。",
+      "definition_en": "Two things varying together (correlation) doesn't mean one causes the other (causation). It may be coincidence, a common third cause, or reverse direction. Treating correlation as causation yields wrong interventions.",
+      "scenarios_zh": "政策評估、健康研究、商業分析。",
+      "scenarios_en": "Policy evaluation, health research, business analytics.",
+      "cases": [
+        {
+          "title_zh": "冰淇淋與溺水",
+          "title_en": "Ice Cream and Drowning",
+          "desc_zh": "冰淇淋銷量與溺水人數高度正相關，但吃冰淇淋不會让人溺水。共同原因是「夏天高溫」。把相關當因果而下令禁賣冰淇淋，就會鬧笑話。",
+          "desc_en": "Ice cream sales correlate strongly with drownings, but ice cream doesn't cause drowning. The common cause is summer heat. Banning ice cream on this correlation would be absurd."
+        },
+        {
+          "title_zh": "早起與成功",
+          "title_en": "Early Risers and Success",
+          "desc_zh": "許多成功人士早起，但早起不必然導致成功——可能成功者自律所以也早起，或有第三因素如健康作息。要證因果需隨機實驗，而非觀察相關。",
+          "desc_en": "Many successful people rise early, but early rising may not cause success — perhaps disciplined people both succeed and rise early, or a third factor like healthy habits. Proving causation needs randomized trials, not observed correlation."
+        },
+        {
+          "title_zh": "廣告與銷量",
+          "title_en": "Ads and Sales",
+          "desc_zh": "投放廣告當月銷量上升，看似廣告奏效，但可能是季節需求、競品缺貨或促銷活動。不排除其他因素就把預算全歸功廣告，會浪費行銷資源。",
+          "desc_en": "Sales rise in the month you run ads — seems the ads worked, but it could be seasonality, a rival stocking out, or a promo. Attributing the budget fully to ads without ruling out other factors wastes marketing spend."
+        }
+      ]
+    },
+    {
+      "id": "standard-deviation",
+      "number": 64,
+      "category": "probability",
+      "name_zh": "標準差",
+      "name_en": "Standard Deviation",
+      "definition_zh": "衡量一組數值偏離平均的程度。標準差越大，數值越分散、波動越劇烈；越小則越集中、越穩定。它是評估風險與品質一致性的核心指標。",
+      "definition_en": "Measures how spread a set of values is around the mean. Larger standard deviation means more dispersion and volatility; smaller means more concentration and stability. Core metric for risk and quality consistency.",
+      "scenarios_zh": "投資風險、品質管控、績效評估。",
+      "scenarios_en": "Investment risk, quality control, performance evaluation.",
+      "cases": [
+        {
+          "title_zh": "投資風險",
+          "title_en": "Investment Risk",
+          "desc_zh": "兩檔基金平均報酬皆 8%，A 的標準差 5%、B 為 20%。B 波動劇烈、可能某年大賺某年大虧；A 穩定。報酬相同時，標準差小者風險更低。",
+          "desc_en": "Two funds both average 8% returns; A has SD 5%, B 20%. B swings wildly — big gains and losses; A is steady. Same return, lower SD means lower risk."
+        },
+        {
+          "title_zh": "製程一致性",
+          "title_en": "Process Consistency",
+          "desc_zh": "兩家供應商零件平均尺寸相同，但一家標準差小、一批批一致；另一家波動大。標準差小的供應商良率高、組裝順利，是採購首選。",
+          "desc_en": "Two suppliers have the same mean part size, but one has small SD — consistent batch to batch — and the other varies. The low-SD supplier yields higher good-rate and smoother assembly, the procurement choice."
+        },
+        {
+          "title_zh": "學生成績分布",
+          "title_en": "Student Score Spread",
+          "desc_zh": "兩班平均相同但一班標準差大（有人滿分有人不及格）、另一班集中在中間。標準差幫助老師判斷該補救個別落差，還是整班加深難度。",
+          "desc_en": "Two classes have the same mean but one has large SD (aces and fails) and the other clusters mid. SD tells the teacher whether to remediate individual gaps or push the whole class harder."
+        }
+      ]
+    },
+    {
+      "id": "conditional-probability",
+      "number": 65,
+      "category": "probability",
+      "name_zh": "條件機率",
+      "name_en": "Conditional Probability",
+      "definition_zh": "在「某條件已發生」的前提下，某事件發生的機率。它與無條件機率往往不同，忽略「已知條件」會造成嚴重的機率誤判。",
+      "definition_en": "The probability of an event given that some condition has occurred. It often differs from unconditional probability; ignoring 'given conditions' causes severe probability errors.",
+      "scenarios_zh": "醫療決策、法律推理、風險評估。",
+      "scenarios_en": "Medical decisions, legal reasoning, risk assessment.",
+      "cases": [
+        {
+          "title_zh": "有家族史的癌症",
+          "title_en": "Cancer with Family History",
+          "desc_zh": "一般人患某癌機率 2%，但若有家族史則條件機率升至 15%。篩檢策略應依條件機率不同而分級：高危群提早、密集篩檢，一般人不必。",
+          "desc_en": "General cancer risk is 2%, but with family history the conditional probability rises to 15%. Screening strategy should tier by conditional probability: earlier, denser screening for high-risk groups, not for everyone."
+        },
+        {
+          "title_zh": "濕滑路面",
+          "title_en": "Wet Roads",
+          "desc_zh": "晴天事故率低，雨天條件下事故率升高數倍。駕駛應依條件機率調整行為：雨天減速、拉長車距。把「平均事故率」套用所有情境是危險的。",
+          "desc_en": "Accident rates are low in dry weather but multiply under rain. Drivers should adjust by conditional probability — slow down, lengthen gaps in rain. Applying the 'average rate' to all conditions is dangerous."
+        },
+        {
+          "title_zh": "求職面試",
+          "title_en": "Job Interviews",
+          "desc_zh": "履歷通過篩選後，進面試者的錄取機率遠高於全部投遞者。條件機率讓你理解「進入下一關」後的真實勝率，避免在錯誤階段過度焦慮或樂觀。",
+          "desc_en": "Once a résumé passes screening, the conditional probability of being hired is far higher than among all applicants. Conditional probability clarifies your real odds after each stage — avoiding wrong-stage anxiety or optimism."
+        }
+      ]
+    },
+    {
+      "id": "gamblers-fallacy",
+      "number": 66,
+      "category": "probability",
+      "name_zh": "賭徒謬誤",
+      "name_en": "Gambler's Fallacy",
+      "definition_zh": "誤以為獨立事件會「自我平衡」：連開六次紅，下次「該」開黑了。其實每次都是獨立的，過去結果不影響未來機率。硬幣沒有記憶。",
+      "definition_en": "Mistakenly believing independent events 'self-correct': six reds in a row means black is 'due'. Each spin is independent; past results don't change future probabilities. The coin has no memory.",
+      "scenarios_zh": "賭博、投資、抽獎。",
+      "scenarios_en": "Gambling, investing, lotteries.",
+      "cases": [
+        {
+          "title_zh": "輪盤下注",
+          "title_en": "Roulette Betting",
+          "desc_zh": "輪盤連開十次黑色，賭客相信「紅色該來了」而重壓紅。其實第十一次紅黑機率仍各半，過去十次與下次無關。這個謬誤讓賭場獲利更豐。",
+          "desc_en": "Roulette hits black ten times; a gambler 'knows red is due' and bets big. The eleventh spin is still 50/50 — the past ten are irrelevant. This fallacy fattens casino profits."
+        },
+        {
+          "title_zh": "連跌必反彈",
+          "title_en": "It Must Rebound",
+          "desc_zh": "股票連跌七天，投資人認為「總該反彈」而加碼攤平。但每天漲跌是獨立條件機率，連跌不保證明天漲。把賭徒謬誤套用股市，常越攤越深。",
+          "desc_en": "A stock falls seven days; an investor insists 'a rebound is due' and averages down. But daily moves are independent conditional probabilities — seven reds don't guarantee green. The gambler's fallacy applied to stocks digs the hole deeper."
+        },
+        {
+          "title_zh": "生男生女",
+          "title_en": "Boy or Girl",
+          "desc_zh": "連生三個女兒後，有人覺得「第四個總該是兒子」。其實每次懷孕生男機率仍約一半，前三胎不影響第四胎。賭徒謬誤在生活無處不在。",
+          "desc_en": "After three daughters, someone feels 'the fourth must be a son'. But each pregnancy is still ~50% boy — the first three don't affect the fourth. The gambler's fallacy is everywhere in life."
+        }
+      ]
+    },
+    {
+      "id": "simpsons-paradox",
+      "number": 67,
+      "category": "probability",
+      "name_zh": "辛普森悖論",
+      "name_en": "Simpson's Paradox",
+      "definition_zh": "分組看與合併看，趨勢可能完全相反：A 在每個子群都勝過 B，合併後 A 卻輸給 B。原因往往是各子群樣本比例不均。看數據必須留意分組結構。",
+      "definition_en": "Grouped vs combined views can show opposite trends: A beats B in every subgroup yet loses overall. The cause is often uneven subgroup sample proportions. Reading data demands attention to grouping structure.",
+      "scenarios_zh": "醫療比較、教育評比、招聘分析。",
+      "scenarios_en": "Medical comparisons, education rankings, hiring analytics.",
+      "cases": [
+        {
+          "title_zh": "腎結石療法",
+          "title_en": "Kidney-Stone Treatments",
+          "desc_zh": "療法 A 在大結石與小結石兩組的治癒率都高於 B，但合併所有病人後 B 反而較高。原因是 A 多用於難治的大結石、B 多用於易治的小結石，組成不均造成逆轉。",
+          "desc_en": "Treatment A beats B for both large and small stones, yet combined B wins — because A was used more on hard large stones and B on easy small ones. Uneven composition reverses the trend."
+        },
+        {
+          "title_zh": "研究所錄取",
+          "title_en": "Grad-School Admissions",
+          "desc_zh": "某校各系所男性錄取率都不低於女性，全校合計男性錄取率卻較高，看似性別歧視。細看：男性多申請錄取率高的工科、女性多申請競爭激烈的文科，組成造成落差。",
+          "desc_en": "In every department men's admission rate is no lower than women's, yet men win overall — seeming sexist. In fact men applied more to high-rate engineering and women to competitive humanities; composition explains the gap."
+        },
+        {
+          "title_zh": "點擊率比較",
+          "title_en": "Click-Through Comparison",
+          "desc_zh": "新版廣告在行動與桌機兩端點擊率都勝過舊版，合併後卻較低。原因是新版曝光集中在低點擊的桌機、舊版集中於高點擊的行動。辛普森悖論提醒別只看合計數字。",
+          "desc_en": "The new ad beats the old on both mobile and desktop click rates, yet loses overall — because the new ad's impressions concentrated on low-click desktop and the old on high-click mobile. The paradox warns against reading only totals."
+        }
+      ]
+    },
+    {
+      "id": "inertia",
+      "number": 68,
+      "category": "nature",
+      "name_zh": "慣性",
+      "name_en": "Inertia",
+      "definition_zh": "物體靜者恆靜、動者恆動，除非受到外力。類推到組織與習慣：現狀有自我延續的力量，啟動改變與停止改變都需要付出額外力量。",
+      "definition_en": "An object at rest stays at rest, in motion stays in motion, unless acted upon. By analogy to organizations and habits: the status quo self-perpetuates; starting and stopping change both require extra force.",
+      "scenarios_zh": "組織變革、習慣養成、產品轉型。",
+      "scenarios_en": "Organizational change, habit formation, product pivots.",
+      "cases": [
+        {
+          "title_zh": "啟動健身",
+          "title_en": "Starting Exercise",
+          "desc_zh": "最難的是前兩週——把靜止的身體啟動要克服慣性。一旦連續運動成為「動者恆動」的狀態，維持反而省力。理解慣性讓你知道撐過啟動期就輕鬆了。",
+          "desc_en": "The first two weeks are hardest — overcoming inertia to start a body at rest. Once regular exercise becomes 'a body in motion', maintaining it is easier. Understanding inertia means pushing through the start pays off."
+        },
+        {
+          "title_zh": "企業轉型",
+          "title_en": "Corporate Transformation",
+          "desc_zh": "老牌企業的流程、文化、人際網絡都在「動者恆動」，要改方向需極大外力（危機或新領導）。這就是為何改革常要等到存亡之際才動得起來。",
+          "desc_en": "A legacy firm's processes, culture, and networks are 'in motion'; changing direction needs huge force (crisis or new leadership). That's why reform often only moves at the brink of survival."
+        },
+        {
+          "title_zh": "會議慣性",
+          "title_en": "Meeting Inertia",
+          "desc_zh": "一個每週開、已無實質用途的會議，會因慣性持續數年——沒人記得為何開、也沒人敢停。停止一個進行中的事物，需要刻意的「煞車力」。",
+          "desc_en": "A weekly meeting with no real purpose persists for years through inertia — no one recalls why it started or dares end it. Stopping something in motion takes deliberate braking force."
+        }
+      ]
+    },
+    {
+      "id": "momentum",
+      "number": 69,
+      "category": "nature",
+      "name_zh": "動能",
+      "name_en": "Momentum",
+      "definition_zh": "質量乘以速度，描述運動的累積力量。類推上，一旦計畫、產品或團隊獲得速度與規模，就帶著一股難以逆轉的推進力，可善用也可提防。",
+      "definition_en": "Mass times velocity — the accumulated force of motion. By analogy, once a project, product, or team gains speed and scale it carries a hard-to-reverse driving force — to be harnessed or guarded against.",
+      "scenarios_zh": "產品成長、團隊士氣、趨勢判斷。",
+      "scenarios_en": "Product growth, team morale, trend judgment.",
+      "cases": [
+        {
+          "title_zh": "產品飛輪",
+          "title_en": "Product Flywheel",
+          "desc_zh": "用戶增長→口碑→更多用戶，累積成難以阻擋的動能。早期刻意「加重」（補貼、品質）以建立動能，一旦轉起來，成長會自我加速，對手難以追上。",
+          "desc_en": "Users grow → word of mouth → more users, accumulating unstoppable momentum. Early on you deliberately 'add mass' (subsidies, quality) to build it; once spinning, growth self-accelerates and rivals can't catch up."
+        },
+        {
+          "title_zh": "團隊士氣",
+          "title_en": "Team Morale",
+          "desc_zh": "連勝會累積信心與節奏（正動能），連敗則累積自我懷疑（負動能）。優秀領導者會刻意安排小勝來重建正動能，因為動能比單一戰役更重要。",
+          "desc_en": "Winning streaks build confidence and rhythm (positive momentum); losing streaks build self-doubt (negative). Good leaders deliberately arrange small wins to rebuild positive momentum — it matters more than any single battle."
+        },
+        {
+          "title_zh": "股價動能",
+          "title_en": "Stock-Price Momentum",
+          "desc_zh": "短期內強勢股常繼續強勢、弱勢股繼續弱勢，因資金與心理的動能自我延續。動能投資策略即善用此現象，但也須提防動能反轉時的急殺。",
+          "desc_en": "In the short run strong stocks tend to keep strong and weak keep weak, as capital and psychological momentum self-perpetuate. Momentum strategies exploit this — but beware sharp reversals."
+        }
+      ]
+    },
+    {
+      "id": "leverage",
+      "number": 70,
+      "category": "nature",
+      "name_zh": "槓桿",
+      "name_en": "Leverage",
+      "definition_zh": "以小的施力點配合長力臂，移動巨大的重物。類推上，找到高槓桿點——投入小卻影響大——能讓有限資源產生數倍效果。關鍵在找對施力點。",
+      "definition_en": "A small force over a long arm moves a huge load. By analogy, finding a high-leverage point — small input, large impact — lets limited resources yield multiples of effect. The key is the right point to push.",
+      "scenarios_zh": "管理決策、行銷、個人成長。",
+      "scenarios_en": "Management decisions, marketing, personal growth.",
+      "cases": [
+        {
+          "title_zh": "關鍵流程改善",
+          "title_en": "Improving the Key Process",
+          "desc_zh": "工廠改善最慢的瓶頸工序一小時，等於改善全線產出數小時。瓶頸就是高槓桿點：在此投入一分力，全線放大數倍。找對施力點勝過全面優化。",
+          "desc_en": "Improving the slowest bottleneck by one hour equals hours of whole-line output. The bottleneck is the high-leverage point: a unit of effort here multiplies across the line. Pushing the right point beats optimizing everywhere."
+        },
+        {
+          "title_zh": "內容行銷",
+          "title_en": "Content Marketing",
+          "desc_zh": "寫一篇深度好文可被轉發數年、帶來持續流量，相較於一次性廣告曝光，是高槓桿的行銷。把時間投入能「重複產出」的資產，槓桿最大。",
+          "desc_en": "A deep article can be reshared for years, driving continuous traffic — versus one-off ad impressions, it's high-leverage marketing. Time invested in assets that 'keep producing' has the greatest leverage."
+        },
+        {
+          "title_zh": "學習槓桿",
+          "title_en": "Learning Leverage",
+          "desc_zh": "學會「如何學習」這個後設技能，會放大往後所有學習的效率——一次投入，終身受益。投資於能跨領域遷移的底層能力，是人生最高槓桿。",
+          "desc_en": "Learning 'how to learn' — a meta-skill — multiplies the efficiency of all future learning: invest once, benefit for life. Investing in transferable底层 abilities is life's highest leverage."
+        }
+      ]
+    },
+    {
+      "id": "friction",
+      "number": 71,
+      "category": "nature",
+      "name_zh": "摩擦力",
+      "name_en": "Friction",
+      "definition_zh": "阻礙運動的力。類推上，流程中的手續、等待、複雜步驟就是摩擦力——它讓使用者卻步、讓員工浪費精力。降低摩擦常比增加動力更有效。",
+      "definition_en": "The force that resists motion. By analogy, procedures, waits, and complex steps in a flow are friction — they deter users and waste employees' energy. Reducing friction is often more effective than adding driving force.",
+      "scenarios_zh": "產品設計、流程改善、習慣養成。",
+      "scenarios_en": "Product design, process improvement, habit formation.",
+      "cases": [
+        {
+          "title_zh": "結帳流程",
+          "title_en": "Checkout Flow",
+          "desc_zh": "每多一個結帳欄位、多一次頁面跳轉，轉換率就下降。與其加大折扣（增加動力），不如減少必填欄位、支援一鍵結帳（降低摩擦），後者往往效果更好。",
+          "desc_en": "Each extra checkout field or page jump lowers conversion. Rather than bigger discounts (more driving force), cut required fields and enable one-click checkout (less friction) — often more effective."
+        },
+        {
+          "title_zh": "健身阻力",
+          "title_en": "Exercise Friction",
+          "desc_zh": "去健身房要通勤、找教練、換裝，這些摩擦讓人放棄。把啞鈴放床邊、運動服擺枕頭旁，把摩擦降到零，習慣自然養成。減摩擦勝過逼意志力。",
+          "desc_en": "Commuting, finding a trainer, changing — these frictions make people quit. Put dumbbells by the bed and workout clothes by the pillow; zero friction and the habit forms. Reducing friction beats brute willpower."
+        },
+        {
+          "title_zh": "官僚摩擦",
+          "title_en": "Bureaucratic Friction",
+          "desc_zh": "報銷要五個章、採購要三級簽核，摩擦讓員工精力耗在流程而非做事。優秀組織會定期「拆摩擦」：簡化簽核、下放權限，釋放執行力。",
+          "desc_en": "Reimbursements need five stamps, procurement three-level approval — friction drains energy into process instead of work. Great organizations periodically 'remove friction': simplify approvals, delegate authority, unleash execution."
+        }
+      ]
+    },
+    {
+      "id": "entropy",
+      "number": 72,
+      "category": "nature",
+      "name_zh": "熵",
+      "name_en": "Entropy",
+      "definition_zh": "系統會自然趨向混亂、無序，這是熱力學第二定律。房間會自動變亂、程式碼會自動腐化、組織會自動鬆散——維持秩序需持續輸入能量。",
+      "definition_en": "Systems naturally tend toward disorder — the second law of thermodynamics. Rooms get messy, code rots, organizations drift slack: maintaining order requires continuous energy input.",
+      "scenarios_zh": "系統維護、組織管理、知識整理。",
+      "scenarios_en": "System maintenance, organizational management, knowledge curation.",
+      "cases": [
+        {
+          "title_zh": "程式碼腐化",
+          "title_en": "Code Rot",
+          "desc_zh": "沒有持續重構的程式碼會逐漸混亂、耦合加深、難以維護——這是軟體的熵增。定期重構（輸入能量）是抵抗熵增、維持可維護性的唯一方法。",
+          "desc_en": "Code without continuous refactoring gradually grows tangled and hard to maintain — software's entropy increase. Regular refactoring (energy input) is the only way to resist entropy and keep maintainability."
+        },
+        {
+          "title_zh": "整理房間",
+          "title_en": "Tidying a Room",
+          "desc_zh": "房間使用後自動趨向混亂（熵增），要保持整潔必須持續「輸入能量」（收拾）。建立「物歸原位」的日常習慣，是用最小能量對抗熵增的方式。",
+          "desc_en": "A room tends toward messiness in use (entropy); staying tidy requires continuous 'energy input' (tidying). A daily 'put it back' habit fights entropy with the least energy."
+        },
+        {
+          "title_zh": "組織鬆散",
+          "title_en": "Organizational Drift",
+          "desc_zh": "沒有定期對齊目標與流程的團隊，會自動各自為政、效率下滑——組織的熵增。定期會議、制度梳理、文化宣導，是注入秩序能量的必要動作。",
+          "desc_en": "A team without regular goal and process alignment drifts into silos and lower efficiency — organizational entropy. Regular meetings, process grooming, and culture reinforcement are the necessary energy of order."
+        }
+      ]
+    },
+    {
+      "id": "natural-selection",
+      "number": 73,
+      "category": "nature",
+      "name_zh": "天擇",
+      "name_en": "Natural Selection",
+      "definition_zh": "環境會篩選掉不適應的變異、留下適應的，使族群逐代偏向有利特徵。類推上，市場與環境也在不斷「天擇」產品、公司、想法，適者生存。",
+      "definition_en": "The environment filters out maladaptive variants and keeps adaptive ones, shifting a population toward helpful traits over generations. By analogy, markets and environments continually 'select' products, firms, and ideas — survival of the fittest.",
+      "scenarios_zh": "產品迭代、創業存活、組織演化。",
+      "scenarios_en": "Product iteration, startup survival, organizational evolution.",
+      "cases": [
+        {
+          "title_zh": "產品試錯",
+          "title_en": "Product Trial and Error",
+          "desc_zh": "推出多個變異版本（A/B 測試），讓市場篩選——轉換率高的留下、低的淘汰。累積數代後，產品「演化」成貼合需求的樣貌，正是商業版天擇。",
+          "desc_en": "Launch many variant versions (A/B tests) and let the market filter — high-conversion variants survive, low ones die. Over generations the product 'evolves' to fit demand — commercial natural selection."
+        },
+        {
+          "title_zh": "新創存活",
+          "title_en": "Startup Survival",
+          "desc_zh": "市場環境（資金、需求、競爭）如嚴苛大自然，九成新創被淘汰。存活者不是最聰明的，而是最適應當下環境的。理解天擇，創業者應專注「適應」而非「完美」。",
+          "desc_en": "The market (capital, demand, competition) is a harsh nature that eliminates 90% of startups. Survivors aren't the smartest but the best adapted. Understanding selection, founders should focus on 'fit' not 'perfection'."
+        },
+        {
+          "title_zh": "文化演化",
+          "title_en": "Cultural Evolution",
+          "desc_zh": "企業內部會自然產生多種做事方式，有效的被模仿留存、無效的被淘汰。久而久之形成「公司文化」。領導者可塑造環境來天擇出想要的文化特徵。",
+          "desc_en": "Within a firm, multiple ways of working arise; effective ones get copied and survive, ineffective ones die. Over time this becomes 'company culture'. Leaders can shape the environment to select for desired traits."
+        }
+      ]
+    },
+    {
+      "id": "evolution",
+      "number": 74,
+      "category": "nature",
+      "name_zh": "演化",
+      "name_en": "Evolution",
+      "definition_zh": "透過變異、選擇、遺傳的循環，族群逐代累積適應特徵。類推上，任何系統透過「嘗試→篩選→保留→再嘗試」的循環，都能朝更適應環境的方向演化。",
+      "definition_en": "Through cycles of variation, selection, and inheritance, populations accumulate adaptive traits over generations. By analogy, any system cycling 'try → filter → retain → retry' can evolve toward better environmental fit.",
+      "scenarios_zh": "產品策略、個人成長、知識累積。",
+      "scenarios_en": "Product strategy, personal growth, knowledge accumulation.",
+      "cases": [
+        {
+          "title_zh": "精益創業",
+          "title_en": "Lean Startup",
+          "desc_zh": "做最小產品（變異）→市場驗證（選擇）→留下有效功能（遺傳）→再迭代。這個演化循環讓產品逐版逼近市場需求，勝過一次性大爆炸式開發。",
+          "desc_en": "Build a minimum product (variation) → market validates (selection) → keep working features (inheritance) → iterate. This evolutionary cycle approaches fit better than one big-bang build."
+        },
+        {
+          "title_zh": "個人技能演化",
+          "title_en": "Personal Skill Evolution",
+          "desc_zh": "嘗試多種技能（變異）→投入市場測試回饋（選擇）→精進有回報的（遺傳）。多年累積，你的能力組合會演化成獨特且適應市場的樣貌。",
+          "desc_en": "Try many skills (variation) → test market feedback (selection) → hone the rewarded ones (inheritance). Over years your skill set evolves into a unique, market-adapted profile."
+        },
+        {
+          "title_zh": "知識演化",
+          "title_en": "Knowledge Evolution",
+          "desc_zh": "閱讀多種觀點（變異）→以實踐檢驗（選擇）→納入有效的心智模型（遺傳）。思想體系會像物種般演化，越來越能解釋與應對真實世界。",
+          "desc_en": "Read diverse views (variation) → test in practice (selection) → adopt working mental models (inheritance). A thought system evolves like a species, increasingly able to explain and navigate the real world."
+        }
+      ]
+    },
+    {
+      "id": "ecosystem",
+      "number": 75,
+      "category": "nature",
+      "name_zh": "生態系",
+      "name_en": "Ecosystem",
+      "definition_zh": "物種與環境相互依存、循環資源、共同演化而成的整體。類推上，產品、平台、使用者、供應商也構成生態系，單看任何一方都無法理解全貌。",
+      "definition_en": "Species and environment interdepend, cycle resources, and co-evolve into a whole. By analogy, products, platforms, users, and suppliers form ecosystems — no single party can be understood in isolation.",
+      "scenarios_zh": "平台策略、產業分析、合作網絡。",
+      "scenarios_en": "Platform strategy, industry analysis, partnership networks.",
+      "cases": [
+        {
+          "title_zh": "App 生態系",
+          "title_en": "App Ecosystems",
+          "desc_zh": "手機系統的價值不在作業系統本身，而在圍繞它的 App 開發者、使用者、周邊廠商構成的生態系。打敗一個平台往往要打敗整個生態，而非單一產品。",
+          "desc_en": "A phone OS's value isn't the OS itself but the ecosystem of app developers, users, and accessory makers around it. Beating a platform usually means beating the whole ecosystem, not one product."
+        },
+        {
+          "title_zh": "供應鏈生態",
+          "title_en": "Supply-Chain Ecosystem",
+          "desc_zh": "一家車廠的競爭力，依賴周圍零組件商、模具廠、人才學校構成的產業聚落。把供應鏈當生態系經營——共生共榮——比壓榨單點成本更永續。",
+          "desc_en": "A carmaker's competitiveness depends on the cluster of parts makers, tooling shops, and talent schools around it. Treating the supply chain as an ecosystem — mutual prosperity — beats squeezing single-point costs."
+        },
+        {
+          "title_zh": "個人專業生態",
+          "title_en": "Personal Professional Ecosystem",
+          "desc_zh": "你的職涯不是單一技能，而是技能、人脈、口碑、作品相互滋養的生態系。經營多樣且互補的資產，比孤注一擲單一技能更能抵抗環境變動。",
+          "desc_en": "Your career isn't one skill but an ecosystem of skills, network, reputation, and work that feed one another. Cultivating diverse, complementary assets resists environmental shocks better than betting on a single skill."
+        }
+      ]
+    },
+    {
+      "id": "compounding",
+      "number": 76,
+      "category": "nature",
+      "name_zh": "複利",
+      "name_en": "Compounding",
+      "definition_zh": "收益再投入產生收益，使成長呈指數而非線性。複利的力量在「時間」與「不中斷」：小小的持續投入，經數十年能累積成驚人成果。",
+      "definition_en": "Returns reinvested generate their own returns, making growth exponential rather than linear. Compounding's power is 'time' and 'no interruption': small sustained inputs compound into astonishing results over decades.",
+      "scenarios_zh": "投資、學習、人脈、健康。",
+      "scenarios_en": "Investing, learning, networks, health.",
+      "cases": [
+        {
+          "title_zh": "長期投資",
+          "title_en": "Long-Term Investing",
+          "desc_zh": "每年 8% 報酬，一萬本金 30 年後變十萬——其中九成來自複利而非本金。複利說明：時間是普通人最強的財富槓桿，越早開始越佔便宜。",
+          "desc_en": "At 8% a year, 10,000 becomes 100,000 in 30 years — 90% from compounding, not principal. Compounding shows time is the ordinary person's strongest wealth lever; starting early wins."
+        },
+        {
+          "title_zh": "知識複利",
+          "title_en": "Knowledge Compounding",
+          "desc_zh": "每學一個新觀念，都會與既有知識產生連結、衍生新理解。讀得越多，吸收新知越快——這是知識的複利。每天讀半小時，十年後差距巨大。",
+          "desc_en": "Each new idea links to existing knowledge and spawns new understanding. The more you read, the faster you absorb — knowledge compounding. Half an hour daily makes a huge gap in ten years."
+        },
+        {
+          "title_zh": "人脈複利",
+          "title_en": "Network Compounding",
+          "desc_zh": "幫過的人介紹新朋友、新朋友又帶來機會，關係網呈指數擴張。早期刻意付出、不計回報地建立信任，多年後人脈會以複利方式回報你。",
+          "desc_en": "People you help introduce new friends, who bring opportunities — your network expands exponentially. Deliberately giving and building trust early pays back in compounded ways years later."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (for generation script)
+node_modules/
+package-lock.json
+.env
+.env.local
+
+# Local API keys - never commit
+*.key
+secrets.json
