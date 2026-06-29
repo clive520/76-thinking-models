@@ -79,6 +79,15 @@ const PROVIDERS = {
     modelFallbacks: ['big-pickle', 'deepseek-v4-flash-free', 'mimo-v2.5-free', 'north-mini-code-free', 'nemotron-3-ultra-free', 'glm-5.2'],
     modelHint: { zh: '留空自動偵測；免費模型如 big-pickle、deepseek-v4-flash-free', en: 'Leave empty for auto-detect; free models like big-pickle, deepseek-v4-flash-free' },
   },
+  'opencode-go': {
+    label: 'OpenCode Go',
+    apiType: 'openai',
+    baseUrl: 'https://opencode.ai/zen/go/v1',
+    keyUrl: 'https://opencode.ai/auth',
+    keyHint: { zh: 'OpenCode Go 低價訂閱：首月 $5、之後 $10/月，含 13 個開源模型（GLM-5.2、DeepSeek V4、Kimi K2.7 等）。主機在美/歐/新加坡，全球穩定。', en: 'OpenCode Go low-cost subscription: $5 first month, then $10/month, 13 open models (GLM-5.2, DeepSeek V4, Kimi K2.7...). Hosted in US/EU/Singapore.' },
+    modelFallbacks: ['glm-5.2', 'deepseek-v4-flash', 'kimi-k2.7', 'glm-5.1', 'mimo-v2.5-pro', 'deepseek-v4-pro', 'kimi-k2.6', 'mimo-v2.5'],
+    modelHint: { zh: '留空自動偵測；可填 glm-5.2、deepseek-v4-flash、kimi-k2.7 等', en: 'Leave empty for auto-detect; e.g. glm-5.2, deepseek-v4-flash, kimi-k2.7' },
+  },
 };
 
 export function getProviderInfo(id) { return PROVIDERS[id] || PROVIDERS.gemini; }

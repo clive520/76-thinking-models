@@ -50,6 +50,7 @@ AI 諮詢功能需要你自己免費申請一組 API Key（金鑰只存在你的
 | **OpenRouter** | 含免費模型（名稱 `:free`） | 無 | <https://openrouter.ai/keys> |
 | **NVIDIA NIM** | 註冊送 1000 免費點數 | 無 | <https://build.nvidia.com> |
 | **OpenCode Zen** | 5 個免費模型 + 付費隨用 | 無 | <https://opencode.ai/auth> |
+| **OpenCode Go** | 首月 $5、之後 $10/月，13 個開源模型 | 無（美/歐/新加坡） | <https://opencode.ai/auth> |
 | **OpenAI** | 付費（新帳號可能有試用額度） | 無 | <https://platform.openai.com/api-keys> |
 
 > **台灣使用者建議**：Gemini 免費層有地區限制，請改用 **Groq**、**OpenRouter** 或 **NVIDIA NIM**，皆無地區限制。
@@ -59,8 +60,9 @@ AI 諮詢功能需要你自己免費申請一組 API Key（金鑰只存在你的
 2. **OpenRouter**：至 openrouter.ai 註冊 → Keys → 建立免費 Key → 貼入網站（自動使用免費模型）
 3. **NVIDIA NIM**：至 build.nvidia.com 註冊 → 取得 NGC API Key → 貼入網站（含 1000 免費點數）
 4. **OpenCode Zen**：至 opencode.ai/auth 登入加值 → 複製 API Key → 貼入網站（含 5 個免費模型）
-5. **Google Gemini**：至 aistudio.google.com 建立 Key → 貼入網站（注意地區限制）
-6. **OpenAI**：至 platform.openai.com 綁卡建立 Key → 貼入網站
+5. **OpenCode Go**：至 opencode.ai/auth 訂閱 Go（首月 $5）→ 複製 API Key → 貼入網站（13 個開源模型，全球穩定）
+6. **Google Gemini**：至 aistudio.google.com 建立 Key → 貼入網站（注意地區限制）
+7. **OpenAI**：至 platform.openai.com 綁卡建立 Key → 貼入網站
 
 > 每個服務都可在設定中點「測試連線」驗證 Key 並自動偵測可用模型。
 
